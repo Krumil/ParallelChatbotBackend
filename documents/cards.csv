@@ -1,0 +1,501 @@
+﻿"Card","Card","Parallel","Parallel","","Type","Subtype","Rarity","Token","Cost","Health","Attack","Keywords","Function"
+"Mechanize","Mechanize","augencore","augencore","","effect","","rare","false","5","0","0","Defender","Transform a friendly unit into an upgrade, then attach it to another friendly unit. The transformed unit’s attack, health, and abilities are given to the other friendly unit. The upgraded unit immediately attacks. The enemy may give any unit they control *Defender* for this attack."
+"BionicTweaker","Bionic Tweaker","augencore","augencore","","unit","","common","false","3","4","2","Muster,Armed,Defender,Salvage","*Muster*: Target friendly upgraded unit gains one:
+
+* *Armed*
+* *Defender*
+* *Salvage* 1"
+"AuroraFungi","Aurora Fungi","earthen","earthen","","upgrade","","uncommon","false","2","0","0","","Upgraded unit has +2/+3."
+"RevitalizingGrowth","Revitalizing Growth","earthen","earthen","","effect","","uncommon","false","1","0","0","","Heal any target for 5."
+"ArtilleryVolley","Artillery Volley","marcolian","marcolian","","effect","","legendary","false","3","0","0","","Destroy target friendly unit. Deal damage equal to that unit’s attack to all enemy units."
+"Hijack","Hijack","universal","universal","","effect","","legendary","false","3","0","0","","As an additional cost to play Hijack, waste a friendly banked card and discard a card from your hand.
+Play a revealed enemy banked card for free."
+"EarthbreakerCannon","Earthbreaker Cannon","marcolian","marcolian","","unit","vehicle","legendary","false","6","4","7","Assault,Shielded","*Assault*: Earthbreaker Cannon gains *Shielded*.
+After another friendly Vehicle enters the field, Earthbreaker Cannon deals 5 damage to any target."
+"GroveAltruist","Grove Altruist","earthen","earthen","","unit","","common","false","5","7","4","Aftermath","*Aftermath*: Heal friendly units equal to this unit’s max health, divided as you choose."
+"StudentOfShoshanna","Student of Shoshanna","earthen","earthen","","unit","","common","false","2","2","2","","After you play a unit, this unit gains +1/+1 and heal yourself for 1."
+"DataBreach","Data Breach","universal","universal","","effect","","legendary","false","3","0","0","","Reveal all bank cards."
+"InfusedCore","Infused Core","universal","universal","","relic","","rare","false","3","0","0","","Put a banked card under this relic revealed. That card produces 2 energy each turn.
+If this relic leaves the field, waste the card underneath.
+If this relic is destroyed, take 4 damage."
+"CapeOfCharMahal","Cape of Char Mahal","earthen","earthen","","upgrade","","common","false","3","0","0","","If upgraded unit would be destroyed, fully heal it and destroy this upgrade instead."
+"EnhancedExoskeleton","Enhanced Exoskeleton","augencore","augencore","","upgrade","","uncommon","false","3","0","0","Shielded","Upgraded unit has +1/+1 for each upgrade not named Enhanced Exoskeleton attached to it and gains *Shielded*."
+"UniversalSoldier","Universal Soldier","universal","universal","","unit","","uncommon","false","4","3","3","","This unit has +1/+1 for each revealed enemy bank card."
+"BlackMarketFixer","Black Market Fixer","universal","universal","","unit","","uncommon","false","4","2","2","Muster","*Muster*: Destroy target enemy unit with cost 2 or less."
+"TradeSecrets","Trade Secrets","augencore","augencore","","effect","","legendary","false","3","0","0","","Copy all upgrades attached to a friendly unit onto another friendly unit."
+"CollateralDamage","Collateral Damage","universal","universal","","effect","","common","false","2","0","0","","Destroy target enemy relic."
+"LifeStream","Life Stream","universal","universal","","relic","","common","false","1","0","0","","At the start of each player's turn, that player chooses a target to be healed by 1"
+"OcularImplant","Ocular Implant","augencore","augencore","","upgrade","","common","false","1","0","0","","When upgraded unit attacks, draw a card."
+"SeersStone","Seer's Stone","universal","universal","","relic","","rare","false","3","0","0","","The top card of your deck is always revealed to you.
+Activate, destroy target friendly card you control: Waste the top card of your deck."
+"RecklessScientist","Reckless Scientist","universal","universal","","unit","","common","false","4","3","2","Muster","*Muster*: Put a random card from your waste into your hand. Take 1 damage."
+"ChangeOfHeart","Change of Heart","earthen","earthen","","effect","","common","false","3","0","0","Pacifist","Target unit gains *Pacifist*."
+"DauntlessAxeman","Dauntless Axeman","earthen","earthen","","unit","","rare","false","3","3","5","Attuned,Pacifist","*Attuned*
+
+* Dormant: *Pacifist*
+* Awakened: When this unit is destroyed, put it into your bank."
+"Recon","Recon","universal","universal","","effect","","uncommon","false","2","0","0","","Choose a card type, then reveal two enemy banked cards. If either card is the chosen type, draw a card."
+"StewardOfTheGarden","Steward of the Garden","earthen","earthen","","unit","","common","false","1","4","0","","At the start of your turn, gain 1 energy."
+"MercenaryGunslinger","Mercenary Gunslinger","universal","universal","","unit","","common","false","1","1","1","Muster","*Muster*: Deal 1 damage to any target."
+"FormidablePresence","Formidable Presence","earthen","earthen","","effect","","uncommon","false","4","0","0","Battle Ready,Defender","Transform up to 3 friendly banked cards into 2/2 *Bulwark Seeds* with *Battle Ready*, and *Defender*, and put them onto the field. These units can not be damaged or destroyed. At the start of your next turn, transform the *Bulwark Seeds* back and return them to your bank. They don't give energy that turn."
+"ParadigmShift","Paradigm Shift","earthen","earthen","","upgrade","","common","false","2","0","0","","Upgraded unit has +0/+2.
+Double any healing upgraded unit receives."
+"TradeRouteAmbush","Trade Route Ambush","universal","universal","","effect","","rare","false","3","0","0","","Waste a revealed bank card."
+"SmuggledSupplies","Smuggled Supplies","universal","universal","","effect","","common","false","1","0","0","","You may play revealed cards in your bank this turn as though they were in your hand."
+"SecondChance","Second Chance","universal","universal","","effect","","common","false","2","0","0","","Shuffle the enemy waste into their deck, then remove this effect from the game."
+"FoundryTechnician","Foundry Technician","augencore","augencore","","unit","","uncommon","false","2","1","2","Shielded","*Shielded*
+After you play an upgrade, draw a card."
+"ScannerArray","Scanner Array ","augencore","augencore","","upgrade","","common","false","0","0","0","","After upgraded unit deals damage, the enemy reveals one of their banked cards."
+"KamuyProtector","Kamuy Protector","earthen","earthen","","unit","","uncommon","false","4","6","3","Decay","After an adjacent unit takes *Decay* damage, play a Kamuy Protector from your deck for free."
+"CunningDiplomat","Cunning Diplomat","universal","universal","","unit","","uncommon","false","2","1","0","Defender,Muster","*Defender*
+*Muster*: Draw a card."
+"GroveGuardian","Grove Guardian","earthen","earthen","","unit","","rare","false","1","4","0","","*Retaliate*: Deal 1 damage to a random enemy."
+"PrimeaConduit","Primea Conduit","earthen","earthen","","unit","","uncommon","false","1","1","1","Muster","*Shielded, Defender*
+*Muster*: Spend your remaining energy. This unit gains +1/+1 per energy spent."
+"HiddenVaults","Hidden Vaults","universal","universal","","relic","","common","false","2","0","0","","You have no hand limit."
+"MizraLoyalist","Mizra Loyalist","earthen","earthen","","unit","","rare","false","2","3","1","","*Retaliate*: Friendly units named Mizra Loyalist on the field, in hand, and in deck gain +1/+1."
+"ArrisahSkyscout","Arrisah Skyscout","earthen","earthen","","unit","","rare","false","4","5","4","Decay,Defender","*Decay*, *Defender*
+*Retaliate*: Reveal an enemy banked card."
+"StoicSellsword","Stoic Sellsword","universal","universal","","unit","","common","false","2","2","2","Defender","*Defender*"
+"SoleiaDiscipileOfGaffar","Soleia, Disciple of Gaffar","earthen","earthen","","unit","","legendary","false","5","4","4","Armed","At the end of your turn, if no combat damage was dealt this turn, you may pick a friendly unit to attack an enemy unit of your choice. It gains *Armed* and *Evasive* for this attack."
+"PyrrhicVictory","Pyrrhic Victory","universal","universal","","effect","","uncommon","false","3","0","0","","Waste a banked card then the enemy wastes a banked card."
+"JahnChiefEngineer","Jahn, Chief Engineer","augencore","augencore","","paragon","","prime","false","7","3","3","Muster","*Muster*: Reveal random friendly bank cards until an upgrade is revealed. For each card revealed, attach a copy of the revealed upgrade to target unit."
+"BlackMarketSmuggler","Black Market Smuggler","universal","universal","","unit","","common","false","6","4","4","Muster","*Muster*: Gain control of target enemy relic."
+"ArakCombatOverseer","Arak, Combat Overseer","augencore","augencore","","paragon","","prime","false","6","2","2","Muster","*Muster*: create *The Swarm*."
+"ShadyMerchant","Shady Merchant","universal","universal","","unit","","uncommon","false","3","3","4","Muster","*Muster*: Swap a random card in your bank with a random card in the enemy bank."
+"EphrathsAttendant","Ephrath's Attendant","earthen","earthen","","unit","","uncommon","false","3","4","3","","At the start of each player's turn, that player gains 1 energy.
+Activate, reveal a friendly banked card: This ability doesn't trigger on the enemy's next turn. Limit once per turn."
+"UnstableShieldGenerator","Unstable Shield Generator","universal","universal","","unit","","common","false","3","5","0","","At the start of your turn, destroy this unit and deal 2 damage to all units."
+"Kethtrexamine","Kethtrexamine","augencore","augencore","","upgrade","","legendary","false","3","0","0","","Upgraded unit deals and takes double damage."
+"KingpinsTithe","Kingpin's Tithe","universal","universal","","relic","","rare","false","4","0","0","","After the enemy draws a card, they take 1 damage."
+"Rhetorician","Rhetorician","earthen","earthen","","unit","","uncommon","false","5","6","6","Pacifist","Activate, spend 2 energy: Friendly units ignore *Pacifist* this turn."
+"Cytokinesis","Cytokinesis","kathari","kathari","","effect","","rare","false","3","0","0","","Choose a unit in your deck, draw all copies of it, then shuffle your deck."
+"RangseiCoverBlown","Rangsei, Cover Blown","universal","universal","","unit","","common","true","0","1","1","","At the end of your turn, become a copy of target non-legendary, non-paragon unit."
+"TechnophobicWarrior","Technophobic Warrior","universal","universal","","unit","","common","false","4","4","5","Muster","*Muster*: Destroy target friendly relic. Deal damage equal to that relic's cost to any target."
+"AntiussForecast","Antius's Forecast","kathari","kathari","","effect","","common","false","8","0","0","Battle Ready","Play a copy of a non-legendary Clone in your bank. The copy gains *Battle Ready* and ""At the end of your turn, destroy this unit.”"
+"GeneticCorrection","Genetic Correction","kathari","kathari","","effect","","uncommon","false","3","0","0","","Transform target enemy unit into a copy of target friendly unit."
+"ZealousMachinist","Zealous Machinist","augencore","augencore","","unit","","uncommon","false","5","2","3","Shielded","*Shielded*
+At the end of each player's turn, create a 2/2 *Howler*."
+"HydrolistChamber","Hydrolist Chamber","kathari","kathari","","relic","","common","false","1","0","0","","Activate, destroy target friendly unit: Gain 1 energy.
+After this is activated twice in a turn, destroy it."
+"CunningScipian","Cunning Scipian ","kathari","kathari","","unit","clone","common","false","2","2","1","","At the end of your turn, create a 1/1 *Kathari Iterant*."
+"RepurposedArms","Repurposed Arms","augencore","augencore","","relic","","uncommon","false","2","0","0","","Activate: Destroy target friendly upgrade and gain energy equal to half its cost, rounded down. Limit once per turn."
+"GaiasCall","Gaia's Call","earthen","earthen","","relic","","legendary","false","5","0","0","Battle Ready,Pacifist","At the start of your turn, Gaia's Call gains 1 counter.
+After there are 3 or more counters on Gaia's Call, destroy it and play all units in your bank for free. They gain *Battle Ready* and ignore *Pacifist* this turn."
+"BelovedDonor","Beloved Donor","kathari","kathari","","unit","clone","common","false","3","2","3","Aftermath","*Aftermath*: Friendly units gain +1/+1."
+"DrusianExhorator","Drusian Exhorator","kathari","kathari","","unit","clone","rare","false","5","4","3","","Other friendly Clones have +2/+1."
+"TheStaffOfShoshanna","The Staff of Shoshanna","earthen","earthen","","relic","","uncommon","false","1","0","0","Decay","After a friendly unit triggers *Decay*, this relic gains 1 counter.
+Activate, spend 4 energy, destroy this relic: Heal yourself equal to the number of counters on this relic."
+"TabulaRasa","Tabula Rasa","kathari","kathari","","unit","","rare","false","0","1","0","Muster","*Muster*: Spend your remaining energy and reveal a friendly banked unit with cost equal to the amount of energy spent. This unit transforms into a Clone copy of the revealed unit."
+"JumpRecovery","Jump Recovery","augencore","augencore","","relic","","rare","false","3","0","0","Salvage","This relic enters the field with counters equal to the number of revealed enemy bank cards.
+When a friendly upgraded unit is destroyed, you may remove a counter from this relic to *Salvage* an upgrade. Limit once per turn.
+After this relic has no counters, destroy it."
+"EmissaryOfGaffar","Emissary of Gaffar","earthen","earthen","","unit","","rare","false","4","4","3","Pacifist","After another friendly unit is destroyed in combat, target enemy unit gains *Pacifist* until the end of the enemy’s next turn."
+"EighthPalmOfGalli","Eighth Palm of Galli","kathari","kathari","","unit","","rare","false","6","4","4","Muster","*Muster*: Waste a revealed enemy bank card and play a copy of it.
+
+This unit has +1/+1 for each revealed enemy bank card."
+"MaritusAetianRecombinant","Maritus, Aetian Recombinant","kathari","kathari","","unit","clone","legendary","false","4","1","1","Muster","*Muster*: Pick two units in your waste. Maritus gains the attack and health of one and the abilities of the other."
+"HardlinkedPilot","Hardlinked Pilot","augencore","augencore","","unit","","common","false","1","2","1","Shielded,Salvage,Defender","*Shielded*, *Salvage* 1
+If this unit is upgraded, it gains *Defender*."
+"PolyploidianVessel","Polyploidian Vessel","kathari","kathari","","upgrade","","uncommon","false","4","0","0","","At the end of your turn, create a copy of upgraded unit."
+"ScrapheapSalvager","Scrapheap Salvager","augencore","augencore","","unit","","common","false","3","3","2","Salvage,Muster","*Salvage* 1
+*Muster*: You may attach an upgrade with cost 3 or less from your waste onto this unit."
+"OrbitalStrike","Orbital Strike","marcolian","marcolian","","effect","","rare","false","5","0","0","","Deal 5 damage to any target."
+"GaffarArbiterOfEarth","Gaffar, Arbiter of Earth","earthen","earthen","","paragon","","prime","false","4","8","0","Pacifist,Defender,Pacifist","*Pacifist*, *Defender*
+After Gaffar defends, the attacker gains *Pacifist*."
+"MachineLearningMatrix","Machine-Learning Matrix","augencore","augencore","","relic","","rare","false","1","0","0","","At the start of your turn, you may destroy a friendly upgrade. If you do, search your deck for an upgrade that costs 1 more and attach it to a friendly unit of your choice."
+"FireEverything","Fire Everything!","marcolian","marcolian","","effect","","legendary","false","5","0","0","","Draw cards equal to the highest attack among friendly units. You may play effects drawn this way for free this turn."
+"UpcycledTechnology","Upcycled Technology","augencore","augencore","","upgrade","","rare","false","5","0","0","","After this is attached, select a friendly banked Augencore card. After upgraded unit is destroyed, play the chosen card for free."
+"Reclamator","Reclamator","augencore","augencore","","relic","","rare","false","4","0","0","","After a friendly unit is destroyed, gain 1 energy. Limit once per turn.
+After this card is banked, gain 1 extra energy."
+"ResourcefulSmith","Resourceful Smith","augencore","augencore","","unit","","common","false","2","2","2","Muster,Salvage","*Muster*: Target friendly unit gains *Salvage* 2."
+"Graul","G.R.A.U.L","augencore","augencore","","unit","","rare","false","4","5","3","Shielded,Muster","*Shielded*
+*Muster*: You may attach an upgrade from your bank onto this unit."
+"WisenedElder","Wisened Elder","earthen","earthen","","unit","","common","false","2","4","2","Decay","*Decay*"
+"InnovativeApprentice","Innovative Apprentice","augencore","augencore","","unit","","uncommon","false","1","1","1","","After an upgrade is attached to this unit, draw a card."
+"Premonition","Premonition","universal","universal","","effect","","uncommon","false","2","0","0","","Draw a random card from your deck with cost equal to the highest cost friendly banked card."
+"EnhancedBlueprints","Enhanced Blueprints ","augencore","augencore","","effect","","rare","false","1","0","0","","If you control an upgraded unit, look at the top 3 cards of your deck and choose one to draw. Put the others on the bottom of your deck in a random order."
+"KillSwitch","Kill Switch","augencore","augencore","","upgrade","","common","false","3","0","0","","After upgraded unit is destroyed, destroy target enemy unit."
+"ImprovisedTactics","Improvised Tactics","marcolian","marcolian","","effect","","common","false","2","0","0","Assault","Draw two cards, then discard a card.
+*Assault*: Draw two cards instead."
+"MantisCorsair","Mantis Corsair","universal","universal","","unit","vehicle","common","false","5","4","4","Muster","*Muster*: Deal 3 damage to the enemy."
+"GrapheneBatteries","Graphene Battery","augencore","augencore","","upgrade","","uncommon","false","2","0","0","","Upgraded unit has +4/+0. After upgraded unit is destroyed, deal damage equal to its attack to all friendly units."
+"SolarGrenade","Solar Grenade","marcolian","marcolian","","effect","","rare","false","4","0","0","","Deal 2 damage to two random enemy targets.
+When this card is banked, deal 1 damage to a random enemy target."
+"ManipulationRay","Manipulation Ray","marcolian","marcolian","","effect","","rare","false","3","0","0","","Target unit attacks another target adjacent unit."
+"InfusedShaman","Infused Shaman","earthen","earthen","","unit","","uncommon","false","3","5","2","Decay","Adjacent units have *Decay*.
+*Retaliate*: Heal yourself for 1."
+"Amperage","Amperage","augencore","augencore","","upgrade","","uncommon","false","3","0","0","","When upgraded unit is destroyed, deal 1 damage to all enemy units and put this upgrade into your bank revealed instead of destroying it."
+"TaneShieldOfMeevTsar","Tane, Shield of Meev'Tsar","earthen","earthen","","unit","","legendary","false","8","12","9","Decay,Aftermath","*Decay*
+*Aftermath*: Create *Shallow Grave*."
+"HeraPlatform","H.E.R.A Platform","augencore","augencore","","unit","vehicle","uncommon","false","4","6","2","Muster","*Muster*: This unit gains attack equal to target friendly unit's health."
+"CrackShot","Crack Shot","marcolian","marcolian","","effect","","uncommon","false","1","0","0","","Deal 3 damage to the enemy."
+"HeroicPilot","Heroic Pilot","augencore","augencore","","unit","","common","false","6","6","6","Muster","*Muster*: This unit gains +3/+1 for each other friendly upgraded unit."
+"LancerTank","Lancer Tank","marcolian","marcolian","","unit","vehicle","legendary","false","5","5","5","Assault","On attack, deal 4 damage to target enemy unit.
+*Assault*: Deal 4 damage to the enemy."
+"EmpShockwave","EMP Shockwave","universal","universal","","effect","","uncommon","false","3","0","0","","Choose one:
+
+* Destroy all relics.
+* Destroy all upgrades"
+"SupplyDrop","Supply Drop","marcolian","marcolian","","effect","","common","false","2","0","0","Assault,Armed","Draw a card.
+*Assault*: A unit in your hand gains *Armed*."
+"ScimitarScoutBike","Scimitar Scout Bike","marcolian","marcolian","","unit","vehicle","rare","false","2","2","2","Assault","*Evasive*
+*Assault*: Look at the top four cards of your deck. Put a Vehicle from among them on top of your deck and the rest on the bottom of your deck in a random order."
+"SecurityOfficer","Security Officer","augencore","augencore","","unit","","common","false","2","2","2","Shielded","After an upgrade is attached to this unit, it gains +1/+1 and *Shielded*."
+"NeutronBomb","Neutron Bomb","marcolian","marcolian","","effect","","legendary","false","3","0","0","","Deal 3 damage to target enemy unit. If that unit is destroyed, deal 2 damage to another target enemy unit. If that unit is destroyed, deal 1 damage to another target enemy unit."
+"DesperateMeasures","Desperate Measures","marcolian","marcolian","","effect","","common","false","3","0","0","","Waste a friendly banked card. Deal damage equal to its cost to target enemy unit."
+"UnfairAdvantage","Unfair Advantage","augencore","augencore","","effect","","uncommon","false","1","0","0","","Target upgraded friendly unit attacks an enemy unit of your choice. It gains *Evasive* for this attack."
+"DeterminedAssault","Determined Assault","marcolian","marcolian","","effect","","common","false","2","0","0","","Deal 3 damage to yourself and any target."
+"RepurposedHardware","Repurposed Hardware","marcolian","marcolian","","effect","","uncommon","false","4","0","0","","Put target card on the field into the enemy bank."
+"FirstSonOfMars","First Son of Mars","marcolian","marcolian","","relic","","prime","false","0","0","0","","Destroy this Relic to bring a Unit back from your *Waste*. 
+
+If banked, add an additional 3 Energy this turn."
+"OrbitalPatrol","Orbital Patrol","marcolian","marcolian","","effect","","rare","false","3","0","0","","For each friendly unit, deal 1 damage to a random enemy target."
+"MarcolianBannerman","Marcolian Bannerman","marcolian","marcolian","","unit","","common","false","1","2","1","","When you play an effect, this unit gains +1/+1."
+"ReluctantBerserker","Reluctant Berserker","earthen","earthen","","unit","","rare","false","3","2","1","","After this unit survives damage, it gains +1/+1.
+After this unit’s attack or health becomes 10 or more, destroy it and deal 10 damage to each player."
+"IronCorpsRifleman","Iron Corps Rifleman","marcolian","marcolian","","unit","","rare","false","2","2","2","Armed,Muster","*Armed*
+*Muster*: Deal 1 damage to the enemy."
+"InterrogationTools","Interrogation Tools","marcolian","marcolian","","relic","","common","false","2","0","0","","Activate: The next time you damage the enemy this turn, they reveal one of their banked cards instead. Limit once per turn."
+"FireSupportBase","Fire Support Base","marcolian","marcolian","","unit","","common","false","4","5","2","Defender","*Defender*
+This unit can’t attack.
+Other friendly units have +1/+1."
+"LongbowPersonnelCarrier","Longbow Personnel Carrier","marcolian","marcolian","","unit","vehicle","common","false","3","4","0","Defender,Assault","*Defender*
+*Assault*: Create two 1/1 *Fresh Recruits*."
+"ClaymoreArtilleryGun","Claymore Artillery Gun","marcolian","marcolian","","unit","vehicle","uncommon","false","4","3","4","Assault,Armed","*Assault*: Deal 2 damage to any target.
+After you play an effect, this unit gains *Armed* this turn."
+"Warden","Warden","marcolian","marcolian","","upgrade","","uncommon","false","2","0","0","","When upgraded unit attacks, deal 1 damage to target enemy unit."
+"RuthlessSergeant","Ruthless Sergeant","marcolian","marcolian","","unit","","uncommon","false","6","3","5","Muster","*Muster*: Waste up to 3 friendly banked cards. For each card wasted, target a unit to deal 2 damage to."
+"TacticalDisplay","Tactical Display","marcolian","marcolian","","relic","","uncommon","false","3","0","0","","After a friendly non-token unit enters the field, deal 1 damage to the enemy and heal yourself for 1."
+"CrimsonFleetMachinist","Crimson Fleet Machinist","marcolian","marcolian","","unit","","common","false","1","2","1","Muster","*Muster*: Draw a random Vehicle.
+When a friendly Vehicle enters the field, it gains +0/+1."
+"UnstableDrone","Unstable Drone","marcolian","marcolian","","unit","vehicle","common","false","5","4","3","Defender,Aftermath","*Defender*
+*Aftermath*: Deal damage equal to this unit's attack to target enemy unit."
+"CombatVeteran","Combat Veteran","marcolian","marcolian","","unit","","common","false","2","3","1","","After this unit deals combat damage, it gains +1/+1."
+"TheFlatCircle","The Flat Circle","shroud","shroud","","effect","","common","false","3","0","0","","Put target non-Paragon card into its owner’s hand."
+"CatherineLapointeTheMadGeneral","Catherine Lapointe, The Mad General","marcolian","marcolian","","paragon","","prime","false","4","5","5","","After you end your turn, Catherine attacks a random enemy.
+Catherine can't attack on your turn."
+"BeseechTheGifted","Beseech the Gifted","shroud","shroud","","effect","","uncommon","false","2","0","0","","Draw a random effect."
+"EntropysReach","Entropy's Reach","shroud","shroud","","effect","","uncommon","false","1","0","0","","Add a copy of a revealed enemy bank card to your hand."
+"AshesToAshes","Ashes to Ashes","shroud","shroud","","effect","","rare","false","2","0","0","","Banish a random card in your hand. Draw 2 cards."
+"DarkAllure","Dark Allure","shroud","shroud","","effect","","uncommon","false","8","0","0","","Gain control of target enemy unit."
+"EnthalpysGrasp","Enthalpy's Grasp","shroud","shroud","","effect","","uncommon","false","4","0","0","","Deal damage to target unit equal to the number of cards in your singularity."
+"SacredDestruction","Sacred Destruction","shroud","shroud","","effect","","common","false","6","0","0","","Destroy target unit. If you've played Sacred Destruction three or more times this game, create a 9/9 *Bela, Wielder of Unmaking*."
+"Demolecularize","Demolecularize","shroud","shroud","","effect","","common","false","8","0","0","","Banish all units."
+"TheVoidUnleashed","The Void Unleashed","shroud","shroud","","effect","","rare","false","6","0","0","","For each card in your singularity, deal 1 damage to a random enemy target."
+"LifeSiphon","Life Siphon","shroud","shroud","","effect","","common","false","2","0","0","","Deal 2 damage to target unit. If this would destroy that unit, banish it instead."
+"VoidCrystal","Void Crystal","shroud","shroud","","relic","","uncommon","false","2","0","0","","The first time a card is banished on your turn, gain 1 energy."
+"PocketDimension","Pocket Dimension","shroud","shroud","","relic","","rare","false","4","0","0","","Skip your start of turn and end of turn draws.
+After an effect is played, choose one:
+
+* Draw a card.
+* Put a random card from your singularity into your hand."
+"CollapsingStar","Collapsing Star","shroud","shroud","","relic","","legendary","false","4","0","0","","Collapsing Star enters the field with 3 counters.
+At the start of your turn, remove 1 counter from Collapsing Star. 
+At the end of your turn, banish a random card from your bank or hand. If you can't, banish Collapsing Star.
+After the last counter is removed from Collapsing Star, play up to three cards from your singularity for free, then banish Collapsing Star."
+"DimensionShifter","Dimension Shifter","shroud","shroud","","relic","","rare","false","4","0","0","","At the end of your turn, banish a random friendly unit and put a random unit from your singularity onto the field."
+"SingularitySteward","Singularity Steward","shroud","shroud","","unit","","common","false","1","3","0","","After a unit is banished, this unit gains +2/+1."
+"TomeOfAetio","Tome of Aetio","kathari","kathari","","relic","","common","false","1","0","0","","After a unit enters your waste, this relic gains 1 counter.
+At the start of your turn, if this relic has 5 or more counters, create a 1/1 *Kathari Iterant*.
+At the start of your turn, if this relic has 10 or more counters, create two 1/1 *Kathari Iterants* instead.
+At the start of your turn, if this relic has 20 or more counters, create three 1/1 *Kathari Iterants* instead."
+"PowerInstructor","Power Instructor","shroud","shroud","","unit","","uncommon","false","5","4","5","Muster","*Muster*: Choose a card in your deck, draw it, then shuffle your deck."
+"SpiderDrone","Spider Drone","shroud","shroud","","unit","vehicle","uncommon","false","3","2","2","Muster","*Muster*: Each player banks a random card from hand. If a player can't, they take 4 damage."
+"FanaticalCrewman","Fanatical Crewman","shroud","shroud","","unit","","common","false","3","3","3","Muster","*Muster*: Put the top two cards of each player's deck into your singularity."
+"Voidrunner","Voidrunner","shroud","shroud","","unit","","uncommon","false","2","1","2","Muster","*Muster*: Deal 1 damage to target enemy unit. If that unit is destroyed this turn, banish it."
+"MortalEcho","Mortal Echo","shroud","shroud","","upgrade","","rare","false","2","0","0","","Attach only to a non-paragon enemy unit.
+After upgraded unit is destroyed or banished, create a 1/1 copy under your control."
+"UnseenAllies","Unseen Allies","shroud","shroud","","effect","","common","false","4","0","0","","Until the end of your next turn, you may play cards from your singularity as though it was in your hand."
+"SpectreAttackCraft","Spectre Attack Craft","shroud","shroud","","unit","vehicle","rare","false","3","4","3","","*Evasive*
+After this unit deals combat damage on your turn, reveal a banked enemy card and draw a card. If the enemy has any banked upgrades revealed, you may put a random card from your singularity into your hand instead."
+"SowerOfUnrest","Sower of Unrest","earthen","earthen","","unit","","uncommon","false","3","3","4","Pacifist","All units ignore *Pacifist*."
+"RealityManipulator","Reality Manipulator","shroud","shroud","","unit","","rare","false","4","5","3","","After this unit deals damage to the enemy, reveal a friendly banked card and draw a card. The two cards swap costs."
+"RainsoakedMourner","Rainsoaked Mourner","earthen","earthen","","unit","","common","false","2","3","3","Pacifist,Aftermath,Decay","*Pacifist*
+This unit can't be healed.
+*Aftermath*: If this unit was destroyed by *Decay* damage, deal 3 damage to all enemy units."
+"ExposedSecrets","Exposed Secrets","shroud","shroud","","upgrade","","uncommon","false","3","0","0","","After upgraded unit is destroyed, select cards from your singularity equal to the number of revealed enemy bank cards and put them into your hand."
+"ArdentNegotiator","Ardent Negotiator ","earthen","earthen","","unit","","uncommon","false","4","5","2","Defender","*Defender*
+After this unit defends and survives, put the attacking unit into its owner’s hand."
+"CeremonialRites","Ceremonial Rites","earthen","earthen","","effect","","common","false","2","0","0","","Damaged friendly units gain +2/+2."
+"DoctorsAssistant","Doctor's Assistant ","earthen","earthen","","unit","","common","false","3","4","3","Muster","*Muster*: Reveal a friendly banked card. Heal a friendly unit equal to the revealed card’s cost."
+"ShaymakStoneEyes","Shaymak Stone-Eyes","earthen","earthen","","unit","","common","false","11","7","7","Muster","While in hand, reduce the cost of this unit by 1 when you are healed.
+*Muster*: Draw three cards."
+"ShoshannasStandard","Shoshanna's Standard","earthen","earthen","","relic","","rare","false","1","0","0","Decay","After a friendly unit takes *Decay* damage, it gains +1/+0."
+"RugPull","Rug Poll","universal","universal","","relic","","rare","false","3","0","0","","If a friendly unit is targeted by an enemy effect, you may change the target to this relic instead, then destroy this relic."
+"JonahTheUndecided","Jonah the Undecided","earthen","earthen","","unit","","legendary","false","5","8","3","Defender,Pacifist,Pacifist","*Defender*
+After Jonah defends and survives, he gains 1 counter.
+After Jonah gains a third counter, choose one:
+
+* All units on the field gain *Pacifist*.
+* All units on the field lose *Pacifist*."
+"ReliantGamma","Reliant Gamma","kathari","kathari","","unit","clone","uncommon","false","1","1","1","","At the start of your turn, if you control another friendly Clone, this unit gains +1/+1."
+"ProgenitorPod","Progenitor Pod","kathari","kathari","","unit","","legendary","false","3","8","0","","Progenitor Pod can't attack.
+At the end of your turn, if a friendly unit was destroyed, Progenitor Pod gains a counter.
+At the start of your turn, if Progenitor Pod has 3 or more counters, remove 3 counters to return a unit from any waste to the field under your control."
+"ValerusiCohorts","Valerusi Cohorts","kathari","kathari","","unit","clone","common","false","4","4","3","","At the start of your turn, if you don't control a *Gnaeus’ Vanguard*, create a 2/2 *Gnaeus’ Vanguard* that immediately attacks."
+"ValerusiStandardBearer","Valerusi Standard Bearer","kathari","kathari","","unit","clone","uncommon","false","2","3","1","","When another friendly Clone enters the field, it gains +1/+1."
+"SixthPalmOfGalli","Sixth Palm of Galli","kathari","kathari","","unit","","rare","false","6","1","1","Muster","*Muster*: This unit gains 6 counters.
+
+This unit has +1/+1 for each counter on it.
+If this unit would take damage, remove a counter instead.
+After this unit has no counters, destroy it."
+"DiscipleOfMaritus","Disciple of Maritus","kathari","kathari","","unit","clone","uncommon","false","4","3","4","Aftermath","After a friendly Kathari unit is destroyed, this unit gains 1 counter.
+*Aftermath*: Create a 1/1 *Kathari Iterant* for each counter on this unit."
+"GnaeusValerusAlpha","Gnaeus Valerus Alpha","kathari","kathari","","paragon","","prime","false","4","5","3","","On attack, up to 3 other target friendly units have +1/+2 this turn."
+"JuggernautWorkshop","Juggernaut Workshop","augencore","augencore","","paragon","","prime","false","0","0","0","","This Paragon cannot be played to the field"
+"BrandStewardEternal","Brand, Steward Eternal","shroud","shroud","","paragon","","prime","false","5","6","4","Aftermath","After Brand damages another unit, banish that unit transformed into a 4/4 *Corrupted Vision*.
+*Aftermath*: Return all *Corrupted Visions* from your singularity to the field under your control."
+"ScipiusMagnusAlpha","Scipius Magnus Alpha","kathari","kathari","","paragon","","prime","false","5","3","3","","*Muster:* Trigger all Muster abilities that you have activated this game with targets chosen randomly."
+"NiamhWielderofFaith","Niamh, Wielder of Faith","shroud","shroud","","paragon","","prime","false","9","6","6","Battle Ready,Muster","*Battle Ready*, *Evasive*
+Niamh can't be targeted by effects.
+*Muster*: For each effect, relic, and upgrade you've played this game, play a random unit from any parallel with the same cost."
+"AetioExaltedHydrolist","Aetio, Exalted Hydrolist","kathari","kathari","","paragon","","prime","false","8","1","0","Muster","*Muster*: If your deck is empty, create and play *Aetio’s Iterant* with *Evasive* and the sum of all attack, health, and keywords of units in your waste. *Aetio's Iterant* immediately attacks the enemy."
+"NewDawn","The New Dawn","shroud","shroud","","paragon","vehicle","prime","false","3","6","0","","The New Dawn can't be targeted by effects. 
+Activate, spend 1 energy, banish The New Dawn: At the start of your next turn, return The New Dawn to the field and put a card from your singularity into your hand."
+"ShepherdOfTheFallen","Shepherd of the Fallen","shroud","shroud","","unit","","rare","false","4","6","3","","If a card would enter the enemy waste, banish it instead."
+"ShoshannaRebuilderOfEarth","Shoshanna, Rebuilder of Earth","earthen","earthen","","paragon","","prime","false","9","10","12","Muster","*Muster*: Set your health to 30."
+"SacredSiphoner","Sacred Siphoner","shroud","shroud","","unit","","uncommon","false","5","4","3","Defender,Aftermath","*Defender*
+After this unit enters the field, put a card from your singularity into your hand.
+*Aftermath*: Put a card from your singularity into your hand."
+"SquadTraitor","Squad Traitor","universal","universal","","unit","","uncommon","false","3","1","3","Muster","*Muster*: Destroy another target friendly unit then draw two cards."
+"NehemiahDefenderOfEarth","Nehemiah, Defender of Earth","earthen","earthen","","paragon","","prime","false","4","7","0","Defender,Defender","*Defender*
+Friendly units with *Defender* deal damage equal to their current health instead of attack."
+"Saboteur","Saboteur","universal","universal","","unit","","uncommon","false","3","2","2","Muster","*Muster*: Destroy target enemy relic."
+"ArtifactAppraiser","Artifact Appraiser","universal","universal","","unit","","common","false","1","2","1","","If you control a relic, this unit has +2/+0."
+"MalachiteShield","Malachite Shield","earthen","earthen","","upgrade","","uncommon","false","3","0","0","Defender","Upgraded unit has +1/+4 and *Defender*.
+After this unit deals damage to a player, that player reveals one of their banked cards."
+"WannabeWarlord","Wanna-be Warlord","universal","universal","","unit","","rare","false","1","3","0","Armed","This unit can’t attack.
+If this unit’s attack is over 10, it loses “This unit can’t attack.” and gains:
+
+* *Armed*
+* *Evasive*
+* This unit may attack twice per turn.
+* On attack, draw a card."
+"LifeWell","Life Well","universal","universal","","relic","","uncommon","false","2","0","0","","At the start of each player’s turn, heal that player and all units they control for 1."
+"MasterPoisoner","Master Poisoner","universal","universal","","unit","","rare","false","4","3","1","","Destroy any unit dealt damage in combat."
+"AkaraRebelGeneral","Akara, Rebel General","universal","universal","","unit","","legendary","false","5","3","3","Muster","*Muster*: Deal damage to the enemy and heal yourself equal to the number of friendly units on the field."
+"Annihilate","Annihilate","universal","universal","","effect","","rare","false","5","0","0","","Destroy target unit or relic."
+"GaffarsPeacePipe","Gaffar's Peace Pipe","earthen","earthen","","relic","","legendary","false","4","0","0","Pacifist","At the start of each player's turn, Gaffar's Peace Pipe gains 1 counter and a random unit that player controls gains *Pacifist* until Gaffar's Peace Pipe leaves the field.
+After there are 6 or more counters on Gaffar's Peace Pipe, destroy it."
+"InspiringTeacher","Inspiring Teacher","universal","universal","","unit","","common","false","3","2","2","Aftermath","*Aftermath*: Create a 2/1 *Furious Student*."
+"Ds1PrototypeFrigate","DS-1 Prototype Frigate","universal","universal","","unit","vehicle","uncommon","false","7","6","10","","After this unit survives combat damage, draw a card."
+"FreydisEchelonKingpin","Freydis, Echelon Kingpin","universal","universal","","unit","","legendary","false","8","8","4","Muster","*Muster*: If your starting deck contains only universal cards:
+
+* Draw 4 cards.
+* Deal 4 damage to any target.
+* A unit gains +4/+4.
+* Heal yourself for 4.
+* Put a unit with energy cost 4 or less from your waste onto the field."
+"HiredGun","Hired Gun","universal","universal","","unit","","common","false","2","3","2","",""
+"CrewBoss","Crew Boss","universal","universal","","unit","","uncommon","false","5","4","4","","Other friendly units have +1/+1."
+"RousingSignum","Rousing Signum","kathari","kathari","","relic","","uncommon","false","3","0","0","Muster","The first time a friendly Kathari Iterant is created on your turn, trigger target non-paragon unit's *Muster*."
+"CommandeeredWarship","Commandeered Warship","universal","universal","","unit","vehicle","rare","false","8","8","5","","At the start of your turn, this unit deals 4 damage to two random enemies."
+"ChemCrazedBruiser","Chem-Crazed Bruiser","universal","universal","","unit","","common","false","7","7","8","Muster","*Muster*: This unit gains 3 counters.
+
+If this unit would take damage, remove a counter instead.
+After this unit has no counters, destroy it."
+"NucleoticSynthesizer","Nucleotic Synthesizer","kathari","kathari","","relic","","rare","false","1","0","0","","The first time you bank a unit on your turn, this relic gains a counter.
+Activate, remove 3 counters from this relic: Swap a card in your hand with a friendly banked unit. Reduce the cost of the unit put into your hand by 1."
+"UnnaturalSelection","Unnatural Selection","kathari","kathari","","effect","","uncommon","false","2","0","0","","Discard a card, then draw a card. If the card drawn is a unit, create a 1/1 *Kathari Iterant* and draw another card."
+"BeaconOfGnaeus","Beacon of Gnaeus","kathari","kathari","","relic","","common","false","4","0","0","Armed","The first time a unit deals combat damage to the enemy player on your turn, choose one:
+
+* Target unit gains *Armed* until your next turn.
+* Draw a card.
+* Create two 1/1 *Kathari Iterants*."
+"","Pirate Raider","universal","universal","","unit","pirate","n/a","true","2","1","2","Battle Ready","Battle Ready"
+"ScannerProbe","Scanner Probe","universal","universal","","unit","","legendary","false","2","2","1","Battle Ready","*Battle Ready*
+On attack, look at the top card of the enemy’s deck. You may swap a card from your hand with that card."
+"Sanctuary","Sanctuary","universal","universal","","relic","","legendary","false","1","0","0","","Activate, discard a card: Add a random universal unit to your hand. Limit once per turn."
+"SupplyAndDemand","Supply & Demand","universal","universal","","effect","","common","false","4","0","0","","Draw two cards."
+"DanaSilvertongue","Dana Silvertongue","universal","universal","","unit","","legendary","false","4","6","4","","Activate, discard a card: Dana gains a counter. Limit once per turn.
+At the start of your turn, draw a random enemy card with cost equal to the number of counters on Dana. You may remove all counters from Dana to play the card for free. If the card is not played, put it on the bottom of the enemy's deck."
+"Ps8Launcher","PS-8 Launcher","universal","universal","","effect","","uncommon","false","1","0","0","","Deal 2 damage to target unit."
+"RangseiMasterImposter","Rangsei, Master Imposter","universal","universal","","unit","","legendary","false","4","1","1","Muster,Aftermath","*Muster*: Rangsei becomes a copy of target non-legendary, non-paragon unit and gains ""*Aftermath*: If this unit was copying another unit, create a 1/1 *Rangsei, Cover Blown*."""
+"Thundr001Munitions","THUNDR-01 Munitions","augencore","augencore","","relic","","uncommon","false","3","0","0","","Increase damage dealt and taken by friendly units by 1."
+"ThePriming","The Priming","universal","universal","","effect","","prime","false","4","0","0","","Destroy all units. 
+
+Take the enemy's hand and put it into your *Bank*. 
+
+Draw cards until your hand is full. 
+
+If this card is banked, you lose the game."
+"AntiOrganicPulse","Anti-Organic Pulse","augencore","augencore","","effect","","rare","false","7","0","0","","Destroy all non-upgraded units."
+"VirulentSpores","Virulent Spores","earthen","earthen","","effect","","uncommon","false","3","0","0","Decay","All units gain *Decay*."
+"ShipsArmory","Ship's Armory","augencore","augencore","","effect","","rare","false","3","0","0","","Draw cards equal to the number of upgrades attached to friendly units."
+"TheTreeOfNehemiah","The Tree of Nehemiah","earthen","earthen","","relic","","uncommon","false","4","0","0","","At the start of your turn, create a 0/2 *Grove Attendant*. If there are at least 3 revealed enemy bank cards, create a 2/2 *Grove Sentry* instead."
+"SignalJammer","Signal Jammer","marcolian","marcolian","","relic","","rare","false","4","0","0","","Each player can only draw one card per turn."
+"GroveSentry","Grove Sentry","earthen","earthen","","unit","","common","true","0","2","2","Aftermath","*Aftermath*: Reveal an enemy banked card."
+"AegisGenerator","A.E.G.I.S Generator","augencore","augencore","","upgrade","","rare","false","2","0","0","Shielded","At the end of your turn, upgraded unit gains +0/+2 and *Shielded*."
+"GroveTender","Grove Attendant","earthen","earthen","","unit","","common","true","0","2","0","Aftermath","*Aftermath*: Reveal an enemy banked card."
+"StarChart","Star Chart","universal","universal","","relic","","rare","false","3","0","0","","At the start of your turn, look at the top three cards of your deck and put one into your hand instead of drawing a card. Put the others on the bottom of your deck in a random order."
+"ArcWalker","Arc Walker","augencore","augencore","","unit","","common","true","0","3","3","",""
+"AetiosIterant","Aetio's Iterant","kathari","kathari","","unit","clone","common","true","0","0","0","",""
+"Howler","Howler","augencore","augencore","","unit","","common","true","0","2","2","",""
+"DefenseJuggernaut","Defense Juggernaut","augencore","augencore","","unit","","common","true","0","6","3","Defender","*Defender*"
+"TheSwarm","The Swarm","augencore","augencore","","unit","","common","true","0","4","4","Aftermath","*Aftermath*: Create two 1/1 *Nanobots*."
+"Nestor","Nestor","augencore","augencore","","unit","","common","true","0","3","2","Defender","*Defender*"
+"Nanobot","Nanobot","augencore","augencore","","unit","","common","true","0","1","1","","Activate: Transform Nanobot into *Nanite* and attach it to a unit."
+"Elvex","Elvex","augencore","augencore","","unit","","common","true","0","2","3","Armed","*Armed*"
+"RecombinantClone","Recombinant Clone","kathari","kathari","","unit","clone","common","true","0","2","2","",""
+"ArchivistsPride","Archivist's Pride","kathari","kathari","","effect","","common","false","1","0","0","","Add four copies of a friendly banked non-legendary Kathari unit to your deck."
+"ShallowGrave","Shallow Grave","earthen","earthen","","relic","","common","true","0","0","0","","Shallow Grave enters the field with 1 counter.
+At the start of your next turn, remove a counter from Shallow Grave. After Shallow Grave has no counters, destroy it and put *Tane* from your waste onto the field."
+"FuriousStudent","Furious Student","universal","universal","","unit","","common","true","0","1","2","",""
+"VanguardInfiltrator","Vanguard Infiltrator","marcolian","marcolian","","unit","","common","true","0","1","1","",""
+"OttianLegionnaire3","Ottian Legionnaire","kathari","kathari","","unit","","common","true","0","1","1","",""
+"OttianLegionnaire2","Ottian Legionnaire","kathari","kathari","","unit","","common","true","0","3","3","Aftermath","*Aftermath*: Create two 1/1 *Ottian Legionnaires*."
+"IshkurAraksEnforcer","Ishkur, Arak's Enforcer","augencore","augencore","","unit","","rare","true","6","6","5","Muster","*Muster*: Give each friendly un-upgraded Unit a random Upgrade.
+
+When this Unit is destroyed, repeat it’s Muster."
+"CleanseTheEarth","Cleanse the Earth","earthen","earthen","","effect","","rare","false","2","0","0","","Put target enemy non-Paragon unit into the opponent's hand. If you have less than 10 health, target up to two enemy non-Paragon units instead."
+"IlanaKeeperOfTheVault","Ilana, Keeper of the Vault","earthen","earthen","","unit","","legendary","true","4","5","3","","Decay
+
+Friendly units can no longer be destroyed by Decay. 
+
+This unit has +1/+0 for each friendly unit with Decay."
+"ImprovisedProjectile","Improvised Projectile","augencore","augencore","","effect","","common","false","2","0","0","","Destroy target friendly upgrade then deal 4 damage to target enemy unit."
+"AutomationExpert","Automation Expert","augencore","augencore","","unit","","common","false","3","1","1","Muster,Defender,Armed","*Muster*: Choose one:
+
+* Create a 2/3 *Nestor* with *Defender*.
+* Create a 3/2 *Elvex* with *Armed*."
+"AssemblyForeman","Assembly Foreman","augencore","augencore","","unit","","rare","false","2","1","2","","Activate: Choose one:
+
+* Spend 1 energy: Create a 1/1 *Servo Arm*.
+* Waste a friendly banked card: Create a 3/3 *Arc Walker*.
+
+Limit once per turn."
+"LifeVault","Life Vault","earthen","earthen","","relic","","rare","false","1","0","0","","After you heal a damaged unit or player, this relic gets 1 counter.
+Activate, remove 30 counters from this relic and destroy it: Play all cards in your deck for free in order, starting from the top."
+"FlurryOfGenius","Flurry of Genius","augencore","augencore","","effect","","legendary","false","8","0","0","","Play all upgrades from your waste to friendly units, divided as you choose."
+"EyeOfGalli","Eye of Galli","kathari","kathari","","effect","","rare","false","3","0","0","","Draw the top card of the enemy deck and reduce its cost by 2. If that card is a unit, it is also a Clone."
+"MournfulDelta","Mournful Delta","kathari","kathari","","unit","clone","rare","false","4","2","4","","After another friendly unit is destroyed, draw a card."
+"LemieuxMasterCommando","Lemieux, Master Commando","marcolian","marcolian","","paragon","","prime","false","5","5","2","Muster,Assault","*Muster*: Choose one:
+
+* Destroy a unit.
+* Put a unit from your waste into your hand.
+* Friendly units have +1/+1 this turn.
+
+*Assault*: Do all three."
+"AmmoHauler","Ammo Hauler","marcolian","marcolian","","unit","vehicle","rare","false","3","3","1","","After a card is removed from your bank for the first time on your turn, if the enemy has more banked cards than you, you may spend 2 energy to have the enemy waste one of their banked cards."
+"JuryRiggedJuggernaut","Jury-Rigged Juggernaut","augencore","augencore","","unit","","legendary","false","8","4","2","Battle Ready,Muster","*Battle Ready*
+*Muster*: Attach all upgrades in your bank to Jury-Rigged Juggernaut. At the end of your turn, return those upgrades to your bank and destroy Jury-Rigged Juggernaut."
+"IronCorpsQuartermaster","Iron Corps Quartermaster","marcolian","marcolian","","unit","","uncommon","false","3","3","2","Assault","After an enemy banked card is revealed, you may put an effect from your waste into your hand.
+*Assault*: Reveal an enemy banked card."
+"HeavyWeaponsTeam","Heavy Weapons Team","marcolian","marcolian","","unit","","common","false","1","4","1","","This unit can’t attack.
+At the start of your turn, deal 1 damage to the enemy."
+"EliteSharpshooter","Elite Sharpshooter","marcolian","marcolian","","unit","","rare","false","2","2","1","","Destroy any unit dealt damage in combat by this unit."
+"DarkDealings","Dark Dealings","shroud","shroud","","effect","","common","false","4","0","0","","Choose a card from your waste and a card from your singularity and put them into your hand. Take 4 damage."
+"Erasure","Erasure","shroud","shroud","","effect","","common","false","3","0","0","","Banish target unit."
+"CostOfCreation","Cost of Creation","shroud","shroud","","effect","","rare","false","2","0","0","","Discard any number of cards in your hand, then draw that many. Take damage equal to the number of discarded cards. If you discard all cards in your hand, put them in the singularity.
+
+"
+"LoyalComrade","Loyal Comrade","marcolian","marcolian","","unit","","rare","false","3","3","2","","After this unit deals combat damage, create a *Sister in Arms* that immediately attacks the damaged enemy if possible."
+"MindTwister","Mind Twister","shroud","shroud","","effect","","common","false","4","0","0","","Conceal all bank cards. Randomly redistribute each bank card evenly between both players, starting with the enemy."
+"SingularityPortal","Singularity Portal","shroud","shroud","","effect","","rare","false","3","0","0","","Put cards from your deck into your singularity equal to the number of cards in your hand."
+"Paradox","Paradox","shroud","shroud","","relic","","rare","false","1","0","0","","After an enemy unit is destroyed, you may take 1 damage to banish it."
+"BattleHardenedWarrior","Battle Hardened Warrior","earthen","earthen","","unit","","uncommon","false","4","6","4","","After this unit is healed, it gains attack equal to the health restored."
+"NullifierAcolyte","Nullifier Acolyte","shroud","shroud","","unit","","uncommon","false","2","4","1","Aftermath","Effects that target you or other friendly units cost 2 more.
+*Aftermath*: Banish this unit."
+"GallianOrator","Gallian Orator","kathari","kathari","","unit","clone","rare","false","10","4","4","Muster","This unit costs 1 less (to a minimum of 1) for each friendly *Kathari Iterant*.
+*Muster*: Transform target unit into a *Kathari Iterant*, then create two 1/1 *Kathari Iterants*."
+"OttiusCytokineticLegate","Ottius, Cytokinetic Legate","kathari","kathari","","unit","","legendary","false","8","6","6","Aftermath","*Aftermath*: Create two 6/6 *Ottian Legionnaires*."
+"GallianRecombinant","Gallian Recombinant","kathari","kathari","","unit","clone","rare","false","6","3","3","Muster","*Muster*: Choose one:
+
+* Create a *Recombinant Clone* with target friendly unit's attack and health.
+* Create a 2/2 *Recombinant Clone* with target friendly non-paragon unit's abilities."
+"TheGreatEnigma","The Great Enigma","shroud","shroud","","unit","","legendary","false","6","6","5","Battle Ready","*Battle Ready*, *Evasive*
+As an additional cost to play The Great Enigma, destroy a friendly unit and relic.
+After The Great Enigma deals damage to the enemy, play a random card from their hand."
+"ArmouredDivisionHQ","Armoured Division HQ","marcolian","marcolian","","paragon","","prime","false","3","4","1","Shielded","*Shielded*
+Armoured Division HQ can’t attack.
+The first time a friendly Vehicle deals damage to a player each turn, draw a card."
+"BoraWielderOfRage","Bora, Wielder of Rage","shroud","shroud","","unit","","legendary","false","8","0","0","Shielded,Muster","*Shielded*
+*Muster*: Put the top 3 cards of each player's deck into your singularity.
+
+When Bora attacks, put the top 3 cards of both player's decks into your singularity.
+Bora has attack and health equal to the number of cards in your singularity."
+"ValerusiStriker","Valerusi Striker","kathari","kathari","","unit","clone","common","false","1","1","2","","If you control two *Valerusi Strikers*, this card has +1/+0.
+If you control three or more *Valerusi Strikers*, this card has +2/+0 and *Evasive* instead."
+"VoiceOfEuropa","Voice of Europa","kathari","kathari","","unit","clone","rare","false","3","4","2","","The first time you create a *Kathari Iterant* each turn, create one more."
+"VoidTouchedNovice","Void-Touched Novice","shroud","shroud","","unit","","uncommon","false","2","2","2","Muster","*Muster*: Deal 1 damage to a random enemy unit. If this would destroy the enemy unit, banish it instead.
+
+If this unit would enter the waste, banish it transformed into *Void-Touched Adept* instead."
+"EngineWhisperer","Engine Whisperer","shroud","shroud","","unit","","common","false","1","1","1","","Effects you play cost 1 less."
+"HonoredSteward","Honored Steward","shroud","shroud","","unit","","common","false","4","4","4","Muster","*Muster*: Banish target enemy unit until this unit leaves the field."
+"LeonidWielderOfCorruption","Leonid, Wielder of Corruption","shroud","shroud","","unit","","legendary","false","9","6","0","","Leonid can't attack or be targeted by enemy effects.
+At the end of your turn, gain control of target enemy unit or relic until Leonid leaves the field."
+"ShieldedAssassin","Shielded Assassin","universal","universal","","unit","","uncommon","false","1","1","1","","This unit can't be targeted by enemy effects."
+"EchelonHeavy","Echelon Heavy","universal","universal","","unit","","common","false","2","2","2","Aftermath","*Aftermath*: You may deal 1 damage to target unit."
+"BackupCopy","Back Up Copy","kathari","kathari","","effect","","common","false","1","0","0","","Put target friendly unit into your hand. It can't be played this turn."
+"AetianSubjugate","Aetian Subjugate","kathari","kathari","","unit","clone","uncommon","false","3","3","2","","After a friendly Clone enters the field, target unit gains +1/+1 and waste the top card of your deck."
+"AlkalineHydrolist","Alkaline Hydrolist","kathari","kathari","","unit","clone","common","false","2","2","3","Muster","*Muster*: Waste the top card of your deck."
+"VengefulAlly","Vengeful Ally","universal","universal","","unit","","common","false","2","2","1","","After another friendly unit is destroyed, this unit gains +1/+1."
+"EnduringImmunus","Enduring Immunus","kathari","kathari","","unit","clone","common","false","3","3","2","","The first time each turn another friendly non-token Kathari unit would be destroyed, put it into your hand instead."
+"DoubleAgent","Double Agent","universal","universal","","unit","","uncommon","false","2","3","3","Aftermath","*Aftermath*: Put this unit into the enemy bank."
+"FormaticiansExalt","Formatician's Exalt ","kathari","kathari","","unit","clone","common","false","4","4","2","Muster","After this enters your waste from anywhere other than the field, create a 1/1 *Kathari Iterant*.
+*Muster*: Draw a card."
+"Synchronicity","Synchronicity","kathari","kathari","","effect","","common","false","4","0","0","","Play a copy of target non-paragon unit."
+"DefiantClone","Defiant Clone","universal","universal","","unit","clone","uncommon","false","2","3","0","","After a friendly unit enters the field, this unit gains +1/+0."
+"PirateJunker","Pirate Junker","universal","universal","","unit","vehicle","common","false","5","6","3","",""
+"GamblersCoin","Gambler's Coin","universal","universal","","effect","","legendary","false","1","0","0","","Shuffle your hand into your deck, then draw that many cards."
+"Te4Interceptor","TE4 Interceptor","universal","universal","","unit","vehicle","common","false","5","3","3","Muster","*Muster*: You may deal 3 damage to target unit."
+"MementoOfTheFallen","Memento of the Fallen","universal","universal","","upgrade","","legendary","false","3","0","0","","Each time this Upgrade is attached to a Unit, place a +1/+1 counter on it. 
+
+The Upgraded Unit has additional attack and health equal to the number of counters on this Upgrade. 
+
+When the Upgraded Unit is destroyed, you may move this Upgrade to another friendly Unit instead of wasting it. 
+
+If this Upgrade would be wasted on the enemy’s turn, instead remove all counters and return the Upgrade to your hand."
+"HadesWarMech","H.A.D.E.S War Mech","augencore","augencore","","unit","","rare","false","5","5","5","","Upgrades you play on this unit cost 1.
+On attack, also deal damage to the enemy equal to the number of upgrades attached to this unit."
+"LordHarfCartelTreasurer","Lord Harf, Cartel Treasurer","universal","universal","","unit","","legendary","false","2","3","1","","Effects you play cost 1 less.
+Effects the enemy plays cost 1 more."
+"WongPurveyorOfCuriosities","Wong, Purveyor of Curiosities","universal","universal","","unit","","legendary","false","4","4","4","Muster","*Muster*: Look at the top 5 cards of your deck. Choose any number of those cards with different card types and draw them. Put the rest on the bottom of your deck in a random order. For each card type drawn, give a random friendly unit +1/+1."
+"PointDefenseTurret","Point Defense Turret","augencore","augencore","","relic","","rare","false","3","0","0","","This relic enters the field with 1 counter.
+When the enemy plays an effect, this relic gains 1 counter.
+Activate, remove 1 counter: Deal 2 damage to any target."
+"GallianIterant","Gallian Iterant","kathari","kathari","","unit","clone","common","true","0","1","1","Defender","*Defender*"
+"Tombstone","Tombstone","earthen","earthen","","unit","","common","true","0","0","0","Defender,Pacifist","*Defender*, *Pacifist*
+At the start of your next turn, destroy this unit."
+"SisterInArms","Sister in Arms","marcolian","marcolian","","unit","","common","true","0","1","1","",""
+"AttackJuggernaut","Attack Juggernaut","augencore","augencore","","unit","","common","true","0","4","4","Armed","*Armed*"
+"FreshRecruit","Fresh Recruit","marcolian","marcolian","","unit","","common","true","0","1","1","",""
+"BulwarkSeed","Bulwark Seed","earthen","earthen","","unit","","common","true","0","2","2","Battle Ready,Defender","*Battle Ready*, *Defender*
+
+This unit can not be damaged or destroyed.
+
+This unit turns into a banked card at the start of your next turn "
+"KathariIterant","Kathari Iterant","kathari","kathari","","unit","clone","common","true","0","1","1","",""
+"SeeingTriple","Seeing Triple","kathari","kathari","","effect","","common","false","4","0","0","Defender","Create three 1/1 *Gallian Iterants* with *Defender*."
+"OttianLegionnaire","Ottian Legionnaire ","kathari","kathari","","unit","","common","true","0","6","6","Aftermath","*Aftermath*: Create two 3/3 *Ottian Legionnaires*."
+"ScipiusAdjutant","Scipius' Adjutant ","kathari","kathari","","unit","clone","common","true","0","1","0","",""
+"GnaeusVanguard","Gnaeus' Vanguard","kathari","kathari","","unit","clone","common","true","0","2","2","",""
+"VoidTouchedAdept","Void-Touched Adept","shroud","shroud","","unit","","common","true","5","4","4","Muster","*Muster*: Deal 3 damage to a random enemy unit.
+
+If this would destroy the enemy unit, banish it instead. If this unit would enter the waste, banish it transformed into *Void-Touched Master* instead."
+"VoidTouchedMaster","Void-Touched Master","shroud","shroud","","unit","","common","true","8","6","6","Muster","*Muster*: The next card you play this turn is free."
+"BelaWielderOfUnmaking","Bela, Wielder of Unmaking","shroud","shroud","","unit","","common","true","0","9","9","","Bela can't be targeted by effects.
+When Bela attacks, you may destroy target unit."
+"CorruptedVision","Corrupted Vision","shroud","shroud","","unit","","common","true","0","4","4","",""
+"ServoArm","Servo Arm","augencore","augencore","","unit","","common","true","0","1","1","",""
+"BaronSquireTheVile","Baron Squire, the Vile","shroud","shroud","","unit","","rare","true","2","4","2","","Whenever you play an Effect from your hand, create and play a random Effect with the same energy cost."
+"RomusRecombinantJustician","Romus, Recombinant Justician","kathari","kathari","","unit","clone","legendary","true","5","5","5","","Pick up to 2 Friendly Units on the Field. When one or more of these units gain an ability, give that ability to the others as well."
+"MirielleTheGhostOfMars","Mirielle, the Ghost of Mars","marcolian","marcolian","","unit","","rare","true","3","3","1","","Muster: Destroy up to 3 target friendly Units. For each that was destroyed, play a random Unit with a Cost 1 higher than the destroyed Unit from your Deck."
+"NanobotUpgrade","Nanite","augencore","augencore","","upgrade","","common","true","0","0","0","","Upgraded unit has +1/+1."
+"InstantReplicator","Instant Replicator","augencore","augencore","","upgrade","","rare","false","3","0","0","","When this upgrade is attached, it becomes a copy of another target upgrade on the field."
+"CuttingEdge","Cutting Edge","augencore","augencore","","upgrade","","common","false","2","0","0","Armed","Upgraded unit has +1/+0 and *Armed*."
+"GrizzledScout","Grizzled Scout","marcolian","marcolian","","unit","","rare","false","4","4","4","","When another friendly unit attacks, that unit gains +1/+0."
+"StrengthOfMars","Strength of Mars","marcolian","marcolian","","upgrade","","uncommon","false","1","0","0","","When you are dealt damage, upgraded unit gains +1/+1."
+"HallowedBurialGround","Hallowed Burial Ground","earthen","earthen","","relic","","legendary","false","2","0","0","Decay,Defender,Pacifist","After a friendly unit with *Decay* is destroyed, create a *Tombstone* with 0 attack, health equal to the destroyed unit's cost, *Defender*, and *Pacifist*."
+"UnseenCommando","Unseen Commando","marcolian","marcolian","","unit","","uncommon","false","2","1","2","Assault","This unit can't be targeted by enemy abilities or effects.
+*Assault*: This unit gains +1/+1."
+"TriggerHappyTrooper","Trigger Happy Trooper","marcolian","marcolian","","unit","","uncommon","false","1","2","2","","On attack, deal 1 damage to each player."
+"ArtilleryJuggernaut","Artillery Juggernaut","augencore","augencore","","unit","","common","true","0","5","2","","When Artillery Juggernaut enters the field, deal 3 damage to target unit."
+"MagnaTempestsWill","Magna, Tempest's Will","kathari","kathari","","unit","clone","legendary","false","3","2","2","Muster","*Muster*: Choose one:
+
+* Deal damage equal to Magna’s attack to target enemy unit.
+* Draw a card. 
+* Deal 1 damage to the enemy.
+
+If a friendly Kathari unit was destroyed on the enemy’s last turn, do all three instead."
