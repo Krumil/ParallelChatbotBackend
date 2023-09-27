@@ -23,13 +23,13 @@ else:
 
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
-pdf_vectorstore = Chroma(persist_directory="./pdf_chroma_db", embedding_function=OpenAIEmbeddings())
+pdf_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "pdf_chroma_db"), embedding_function=OpenAIEmbeddings())
 pdf_retriever = pdf_vectorstore.as_retriever()
 
-csv_vectorstore = Chroma(persist_directory="./csv_chroma_db", embedding_function=OpenAIEmbeddings())
+csv_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "csv_chroma_db"), embedding_function=OpenAIEmbeddings())
 csv_retriever = csv_vectorstore.as_retriever()
 
-gitbook_vectorstore = Chroma(persist_directory="./gitbook_chroma_db", embedding_function=OpenAIEmbeddings())
+gitbook_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "gitbook_chroma_db"), embedding_function=OpenAIEmbeddings())
 gitbook_retriever = gitbook_vectorstore.as_retriever()
 
 main_tool = create_retriever_tool(
