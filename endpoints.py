@@ -25,31 +25,29 @@ class StreamingHandler(BaseCallbackHandler):
 		self.user_queue.put(json_token)
 
 def query_bot_endpoint():
+	llm = ChatOpenAI(streaming=True)
+
+	user_id = str(uuid.uuid4())
+	user_queue = Queue()
+	users[user_id] = user_queue  # Store the user's queue in the dictionary
+
+	llm.callbacks = [StreamingHandler(user_queue)]  # Initialize the callback with the user's queue
+
+	agent = initialize_bot(llm)
+
 	user_input = request.args.get('prompt', '')
-	return jsonify({"data": user_input}), 200
-	# llm = ChatOpenAI(streaming=True)
+	if not user_input:
+		return jsonify({"error": "User input is required"}), 400
 
-	# user_id = str(uuid.uuid4())
-	# user_queue = Queue()
-	# users[user_id] = user_queue  # Store the user's queue in the dictionary
+	def process_input():
+		agent({"input": user_input})
 
-	# llm.callbacks = [StreamingHandler(user_queue)]  # Initialize the callback with the user's queue
+	# Start the agent function in a separate thread
+	threading.Thread(target=process_input).start()
 
-	# agent = initialize_bot(llm)
+	def sse_stream():
+		while True:
+			token = user_queue.get()
+			yield f"data: {token}\n\n"
 
-	# user_input = request.args.get('prompt', '')
-	# if not user_input:
-	# 	return jsonify({"error": "User input is required"}), 400
-
-	# def process_input():
-	# 	agent({"input": user_input})
-
-	# # Start the agent function in a separate thread
-	# threading.Thread(target=process_input).start()
-
-	# def sse_stream():
-	# 	while True:
-	# 		token = user_queue.get()
-	# 		yield f"data: {token}\n\n"
-
-	# return Response(stream_with_context(sse_stream()), content_type='text/event-stream')
+	return Response(stream_with_context(sse_stream()), content_type='text/event-stream')
