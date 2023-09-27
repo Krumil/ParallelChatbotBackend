@@ -34,6 +34,7 @@ for document in pdfs:
 	splits.extend(md_header_splits)
 
 pdf_vectorstore = Chroma.from_documents(documents=splits, embedding=OpenAIEmbeddings(), persist_directory="./pdf_chroma_db")
+pdf_vectorstore.persist()
 
 data_csv = []
 for document in csv:
@@ -42,6 +43,7 @@ for document in csv:
 	data_csv.extend(data)
 
 csv_vectorstore = Chroma.from_documents(documents=data_csv, embedding=OpenAIEmbeddings(), persist_directory="./csv_chroma_db")
+csv_vectorstore.persist()
 
 data_gitbook = []
 for document in gitbooks:
@@ -50,3 +52,4 @@ for document in gitbooks:
 	data_gitbook.extend(data)
 
 gitbook_vectorstore = Chroma.from_documents(documents=data_gitbook, embedding=OpenAIEmbeddings(), persist_directory="./gitbook_chroma_db")
+gitbook_vectorstore.persist()
