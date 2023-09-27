@@ -14,6 +14,13 @@ os.getenv("LANGCHAIN_ENDPOINT")
 os.getenv("LANGCHAIN_API_KEY") 
 os.getenv("LANGCHAIN_PROJECT")  
 
+DEPLOYMENT_ENV = os.environ.get('DEPLOYMENT_ENV', 'DEVELOPMENT')
+
+if DEPLOYMENT_ENV == 'PRODUCTION':
+    base_directory = "/var/data/embeddings/"
+else:
+    base_directory = ".\\embeddings\\"
+
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
 pdf_vectorstore = Chroma(persist_directory="./pdf_chroma_db", embedding_function=OpenAIEmbeddings())

@@ -7,3 +7,4 @@ openai==0.28.0
 chromadb==0.3.29
 pandas==1.5.3
 tiktoken==0.5.1
+beautifulsoup4==4.12.2

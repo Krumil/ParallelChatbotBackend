@@ -8,7 +8,7 @@ from langchain.document_loaders import GitbookLoader
 DEPLOYMENT_ENV = os.environ.get('DEPLOYMENT_ENV', 'DEVELOPMENT')
 
 if DEPLOYMENT_ENV == 'PRODUCTION':
-    base_directory = "/var/data/db_name/"
+    base_directory = "/var/data/embeddings/"
 else:
     base_directory = ".\\embeddings\\"
 

@@ -128,3 +128,5 @@ dmypy.json
 .pyre/
 
 vscode
+
+embeddings
