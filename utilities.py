@@ -5,6 +5,11 @@ from langchain.vectorstores import Chroma
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.agents.agent_toolkits import create_retriever_tool
 from langchain.agents.agent_toolkits import create_conversational_retrieval_agent
+from langchain.agents.openai_functions_agent.agent_token_buffer_memory import AgentTokenBufferMemory
+from langchain.agents.openai_functions_agent.base import OpenAIFunctionsAgent
+from langchain.schema.messages import SystemMessage
+from langchain.prompts import MessagesPlaceholder
+from langchain.agents import AgentExecutor
 import os
 
 load_dotenv()
@@ -35,7 +40,7 @@ gitbook_retriever = gitbook_vectorstore.as_retriever()
 main_tool = create_retriever_tool(
 	pdf_retriever, 
 	"parallel_tcg",
-	"Useful for answering questions about Parallel TCG"
+	"Documents detail 'Parallel', a post-apocalyptic trading card game with five human factions, and its 'Echo Replication' feature allowing creation of Echo cards using in-game resources."
 )
 csv_tool = create_retriever_tool(
 	csv_retriever,
@@ -49,7 +54,27 @@ gitbook_tool = create_retriever_tool(
 )
 tools = [main_tool, csv_tool, gitbook_tool]
 
-def initialize_bot(llm):
-	agent_executor = create_conversational_retrieval_agent(llm, tools, verbose=True)
-	return agent_executor
 
+
+def initialize_bot(llm):
+	# Memory Component
+	memory_key = "history"
+	memory = AgentTokenBufferMemory(memory_key=memory_key, llm=llm)
+
+	# Prompt Template
+	system_message = SystemMessage(
+		content=(
+			"Do your best to answer the questions about Parallel TCG. "
+			"Feel free to use any tools available to look up relevant information."
+		)
+	)
+	prompt = OpenAIFunctionsAgent.create_prompt(
+		system_message=system_message,
+		extra_prompt_messages=[MessagesPlaceholder(variable_name=memory_key)]
+	)
+
+	# Agent
+	agent = OpenAIFunctionsAgent(llm=llm, tools=tools, prompt=prompt)
+
+	# Agent Executor
+	return AgentExecutor(agent=agent, tools=tools, memory=memory, verbose=True, return_intermediate_steps=False)    
