@@ -22,24 +22,24 @@ Those are the rates at which Renown is earned per card type. These rates are sub
 
 -   **Non-Legendary cards:**
     -   Echo: 4
-    -   FE: 20
-    -   SE: 60
-    -   PL: 60
+    -   First Edition: 20
+    -   Special Edition: 60
+    -   Perfect Loop: 60
 -   **Legendary:**
     -   Echo: 8
-    -   FE: 40
-    -   SE: 120
-    -   PL: 120
+    -   First Edition: 40
+    -   Special Edition: 120
+    -   Perfect Loop: 120
 -   **Non-Legendary with Surge Key:**
     -   Echo: 20
-    -   FE: 100
-    -   SE: 100
-    -   PL: 100
+    -   First Edition: 100
+    -   Special Edition: 100
+    -   Perfect Loop: 100
 -   **Legendary with Surge Key:**
     -   Echo: 40
-    -   FE: 200
-    -   SE: 200
-    -   PL: 200
+    -   First Edition: 200
+    -   Special Edition: 200
+    -   Perfect Loop: 200
 -   **Apparitions:** earn no Renown.
 
 These numbers show the Renown you will earn for a given card type when you get a ranked win, with Surge Key modifiers shown as well.
