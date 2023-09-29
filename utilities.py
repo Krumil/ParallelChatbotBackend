@@ -59,7 +59,7 @@ tools = [main_tool, csv_tool, gitbook_tool]
 def initialize_bot(llm):
 	# Memory Component
 	memory_key = "history"
-	memory = AgentTokenBufferMemory(memory_key=memory_key, llm=llm)
+	memory = AgentTokenBufferMemory(memory_key=memory_key, llm=llm, max_history=2, max_token_limit= 3000)
 
 	# Prompt Template
 	system_message = SystemMessage(
@@ -77,4 +77,4 @@ def initialize_bot(llm):
 	agent = OpenAIFunctionsAgent(llm=llm, tools=tools, prompt=prompt)
 
 	# Agent Executor
-	return AgentExecutor(agent=agent, tools=tools, memory=memory, verbose=True, return_intermediate_steps=False)    
+	return AgentExecutor(agent=agent, tools=tools, memory=memory, verbose=True, return_intermediate_steps=True)    

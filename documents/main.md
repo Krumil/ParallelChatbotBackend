@@ -104,3 +104,39 @@ Intel X: This keyword triggers a special ability if the enemy player has X or mo
 Pacifist: Units with this keyword can't attack. They might have other useful abilities, but they won't be contributing to your offensive efforts.
 Salvage X: When a Unit with this keyword is destroyed, you can move up to X of its attached Upgrades to other Units. This helps you maintain an advantage even when you lose a Unit.
 Shielded: Units with this keyword are immune to the next enemy card effect that targets them. This can protect them from powerful removal spells or debilitating effects.
+
+## Link utili
+
+-   [@ParallelStudios](https://parallel.life): Official site
+-   [@ParallelTwitter](https://twitter.com/parallel): Parallel Studios Twitter
+-   [@AvatarInfo](https://parallel.life/avatars/landing): Avatar Information
+-   [@AvatarBlog](https://parallel.life/blog/avatars): Avatar Blog
+
+-   [@TCG](https://parallel.life): Trading Card Game Official Site
+-   [@ParallelTCGTwitter](https://twitter.com/ParallelTCG): TCG Twitter
+-   [@ParallelTCGInstagram](https://www.instagram.com/parallel_tcg): TCG Instagram
+-   [@ParallelTCGYouTube](https://www.youtube.com/@ParallelTCG): TCG YouTube
+-   [@GameManual](https://parallel.life/game-manual): Game Manual
+-   [@EarlyAccess](https://parallel.life/signup): Early Access Signup
+-   [@Lore](https://parallel.life/story): TCG Lore
+-   [@Podcast](https://open.spotify.com/show/7Majn1wI5JmPOzpTzX7zoL): TCG Podcast
+
+-   [@PrimeWiki](https://prime.wiki): Prime Wiki
+-   [@MultiLanguageInfo](https://www.parallel-info.com): Multi-Language Info
+-   [@ParallelDecksByOlivek](https://app.paralleldecks.xyz): Parallel Decks by Olivek
+-   [@ParallelDecksLife](https://paralleldecks.life/): Deck builder
+
+-   [@Colony](https://parallel.life/colony): AI Colony
+-   [@ColonyTwitter](https://twitter.com/parallelcolony): Colony Twitter
+
+-   [@Echelon](https://www.echelon.io): PRIME and Web3 Echelon
+-   [@EchelonDiscord](https://discord.gg/echelonfnd): Echelon Discord
+
+-   [@OpenseaMainCollection](https://opensea.io/collection/parallelalpha): OS Main Collection
+-   [@OpenseaBaseCollection](https://opensea.io/collection/parallel-on-base): OS Base Collection
+-   [@OpenseaEchosCollection](https://opensea.io/collection/parallel-echos): OS Echos Collection
+-   [@OpenseaAvatarsCollection](https://opensea.io/collection/parallel-avatars/drop): OS Avatars Collection
+-   [@OpenseaAuxiliaryItemsCollection](https://opensea.io/collection/parallel-auxiliary-items): OS Auxiliary Items Collection
+-   [@OpenseaComicsCollection](https://opensea.io/collection/parallelcomics): OS Comics Collection
+-   [@OpenseaLoreCollection](https://opensea.io/collection/parallellore): OS Lore Collection
+-   [@OpenseaCompanionsCollection](https://opensea.io/collection/parallel-companions): OS Companions Collection

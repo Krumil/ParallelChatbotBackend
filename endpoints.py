@@ -1,15 +1,13 @@
+from threading import Thread
+from queue import Queue, Empty
+from collections.abc import Generator
 from flask import jsonify, request, stream_with_context, Response
-from queue import Queue
-from utilities import initialize_bot
-from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
 from langchain.callbacks.base import BaseCallbackHandler
 from utilities import initialize_bot
+from dotenv import load_dotenv
 import os
-import uuid
-import threading
 import json
-import threading
 import time
 
 
@@ -19,66 +17,87 @@ users = {}  # Dictionary to store user queues based on user_id
 agents = {}  # Dictionary to store agents based on user_id
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
-class StreamingHandler(BaseCallbackHandler):
-	def __init__(self, user_queue):
-		self.user_queue = user_queue
+
+# Queue Callback
+class QueueCallback(BaseCallbackHandler):
+	def __init__(self, queue):
+		self.queue = queue
+		self.done_count = 0  # Added this line
+		
+	def on_chat_model_start(self, *args, **kwargs) -> None:
+		print("Chat model started")
 
 	def on_llm_new_token(self, token: str, **kwargs) -> None:
-		json_token = json.dumps(token)
-		self.user_queue.put(json_token)
+		self.queue.put(token)
+
+	def on_llm_end(self, *args, **kwargs) -> None:
+		self.done_count += 1  # Increment the done_count
+		if self.done_count == 2:  # Check if it's the second time
+			self.queue.put('[DONE]')
+
+# Stream Function
+def stream(agent, user_input, user_queue):
+	def task():
+		agent({"input": user_input})
+
+	thread = Thread(target=task)
+	thread.start()
+
+	while True:
+		try:
+			next_token = user_queue.get(True, timeout=2)  # Added timeout here
+			if next_token == '[DONE]':  # Check for end signal
+				break
+			yield f"data: {json.dumps(next_token)}\n\n"
+		except Empty:
+			time.sleep(0.1)  # Sleep for a short time before trying again
+			continue
+
 
 def query_bot_endpoint():
-	llm = ChatOpenAI(streaming=True)
-
 	user_id = request.args.get('user_id')
 	if not user_id:
 		return jsonify({"error": "User ID is required"}), 400
 
-	# Check if user already has an agent
-	if user_id not in agents:
-		user_queue = Queue()
-		users[user_id] = user_queue  # Store the user's queue in the dictionary
-
-		llm.callbacks = [StreamingHandler(user_queue)]  # Initialize the callback with the user's queue
-
-		current_time = time.time()  # Get the current timestamp
-		agent = initialize_bot(llm)
-		agents[user_id] = agent  # Store the agent in the dictionary
-	else:
-		agent = agents[user_id]
-
 	user_input = request.args.get('prompt', '')
 	if not user_input:
 		return jsonify({"error": "User input is required"}), 400
+	
+	user_queue = users.setdefault(user_id, Queue())
 
-	def process_input():
-		agent({"input": user_input})
+	# Initialize LLM based on user status
+	llm = None
+	if user_id not in agents:
+		llm = ChatOpenAI(
+			streaming=True, 
+			callbacks=[QueueCallback(user_queue)], 
+			model="gpt-3.5-turbo-16k"
+		)
+		current_time = time.time()
+		agent = initialize_bot(llm)
+		agents[user_id] = {
+			'agent': agent,
+			'timestamp': current_time
+		}
+	else:
+		agent = agents[user_id]['agent']
 
-	# Start the agent function in a separate thread
-	threading.Thread(target=process_input).start()
+	return Response(stream_with_context(stream(agent, user_input, user_queue)), content_type='text/event-stream')
 
-	def sse_stream():
-		while True:
-			token = users[user_id].get()
-			yield f"data: {token}\n\n"
-
-	return Response(stream_with_context(sse_stream()), content_type='text/event-stream')
 
 
 def cleanup_old_agents():
 	while True:
-		current_time = time.time()  # Get the current timestamp
+		current_time = time.time()
 		agents_to_remove = []
 
-		# Check the age of each agent
 		for user_id, agent_data in agents.items():
 			agent_creation_time = agent_data['timestamp']
-			if current_time - agent_creation_time > 86400:  # 86400 seconds = 24 hours
+			if current_time - agent_creation_time > 86400: 
 				agents_to_remove.append(user_id)
 
-		# Remove old agents
 		for user_id in agents_to_remove:
 			del agents[user_id]
 
-		time.sleep(60)  # Wait for 60 seconds (1 minute) before checking again
+		time.sleep(60)
 

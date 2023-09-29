@@ -10,3 +10,4 @@ app.add_url_rule('/query_bot', 'query_bot', query_bot_endpoint, methods=['GET'])
 
 if __name__ == '__main__':
 	app.run(debug=False)
+ 
