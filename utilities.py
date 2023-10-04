@@ -1,15 +1,13 @@
 from dotenv import load_dotenv
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.text_splitter import MarkdownHeaderTextSplitter
 from langchain.vectorstores import Chroma
-from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.agents.agent_toolkits import create_retriever_tool
-from langchain.agents.agent_toolkits import create_conversational_retrieval_agent
 from langchain.agents.openai_functions_agent.agent_token_buffer_memory import AgentTokenBufferMemory
 from langchain.agents.openai_functions_agent.base import OpenAIFunctionsAgent
 from langchain.schema.messages import SystemMessage
 from langchain.prompts import MessagesPlaceholder
 from langchain.agents import AgentExecutor
+from flask import current_app as app  
 import os
 
 load_dotenv()
@@ -22,41 +20,71 @@ os.getenv("LANGCHAIN_PROJECT")
 DEPLOYMENT_ENV = os.environ.get('DEPLOYMENT_ENV', 'DEVELOPMENT')
 
 if DEPLOYMENT_ENV == 'PRODUCTION':
-    base_directory = "/var/data/embeddings/"
+	base_directory = "/var/data/embeddings/"
 else:
-    base_directory = ".\\embeddings\\"
+	base_directory = ".\\embeddings\\"
 
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
-pdf_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "pdf_chroma_db"), embedding_function=OpenAIEmbeddings())
-pdf_retriever = pdf_vectorstore.as_retriever()
+def initialize_tools():
+	pdf_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "pdf_chroma_db"), embedding_function=OpenAIEmbeddings())
+	pdf_retriever = pdf_vectorstore.as_retriever()
 
-csv_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "csv_chroma_db"), embedding_function=OpenAIEmbeddings())
-csv_retriever = csv_vectorstore.as_retriever()
+	csv_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "csv_chroma_db"), embedding_function=OpenAIEmbeddings())
+	csv_retriever = csv_vectorstore.as_retriever()
 
-gitbook_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "gitbook_chroma_db"), embedding_function=OpenAIEmbeddings())
-gitbook_retriever = gitbook_vectorstore.as_retriever()
+	gitbook_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "gitbook_chroma_db"), embedding_function=OpenAIEmbeddings())
+	gitbook_retriever = gitbook_vectorstore.as_retriever()
 
-print(os.path.join(base_directory, "gitbook_chroma_db"))
-print(os.path.join(base_directory, "csv_chroma_db"))
-print(os.path.join(base_directory, "pdf_chroma_db"))
+	main_tool = create_retriever_tool(
+		pdf_retriever, 
+		"parallel_tcg",
+		"Documents detail 'Parallel', a post-apocalyptic trading card game with five human factions, and its 'Echo Replication' feature allowing creation of Echo cards using in-game resources."
+	)
+	csv_tool = create_retriever_tool(
+		csv_retriever,
+		"cards_database",
+		"Useful for answering questions about cards"
+	)
+	gitbook_tool = create_retriever_tool(
+		gitbook_retriever,
+		"echelon_docs",
+		"Useful for answering questions about PRIME, Echelon, and the anything related to the economics of the Parallel ecosystem"
+	)
+	
+	tools = [main_tool, csv_tool, gitbook_tool]
+	
+	return tools
 
-main_tool = create_retriever_tool(
-	pdf_retriever, 
-	"parallel_tcg",
-	"Documents detail 'Parallel', a post-apocalyptic trading card game with five human factions, and its 'Echo Replication' feature allowing creation of Echo cards using in-game resources."
-)
-csv_tool = create_retriever_tool(
-	csv_retriever,
-	"cards_database",
-	"Useful for answering questions about cards"
-)
-gitbook_tool = create_retriever_tool(
-	gitbook_retriever,
-	"echelon_docs",
-	"Useful for answering questions about PRIME, Echelon, and the anything related to the economics of the Parallel ecosystem"
-)
-tools = [main_tool, csv_tool, gitbook_tool]
+# pdf_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "pdf_chroma_db"), embedding_function=OpenAIEmbeddings())
+# pdf_retriever = pdf_vectorstore.as_retriever()
+
+# csv_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "csv_chroma_db"), embedding_function=OpenAIEmbeddings())
+# csv_retriever = csv_vectorstore.as_retriever()
+
+# gitbook_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "gitbook_chroma_db"), embedding_function=OpenAIEmbeddings())
+# gitbook_retriever = gitbook_vectorstore.as_retriever()
+
+# print(os.path.join(base_directory, "gitbook_chroma_db"))
+# print(os.path.join(base_directory, "csv_chroma_db"))
+# print(os.path.join(base_directory, "pdf_chroma_db"))
+
+# main_tool = create_retriever_tool(
+# 	pdf_retriever, 
+# 	"parallel_tcg",
+# 	"Documents detail 'Parallel', a post-apocalyptic trading card game with five human factions, and its 'Echo Replication' feature allowing creation of Echo cards using in-game resources."
+# )
+# csv_tool = create_retriever_tool(
+# 	csv_retriever,
+# 	"cards_database",
+# 	"Useful for answering questions about cards"
+# )
+# gitbook_tool = create_retriever_tool(
+# 	gitbook_retriever,
+# 	"echelon_docs",
+# 	"Useful for answering questions about PRIME, Echelon, and the anything related to the economics of the Parallel ecosystem"
+# )
+# tools = [main_tool, csv_tool, gitbook_tool]
 
 
 
@@ -64,6 +92,7 @@ def initialize_bot(llm):
 	# Memory Component
 	memory_key = "history"
 	memory = AgentTokenBufferMemory(memory_key=memory_key, llm=llm, max_history=2, max_token_limit= 3000)
+	tools = app.tools
 
 	# Prompt Template
 	system_message = SystemMessage(

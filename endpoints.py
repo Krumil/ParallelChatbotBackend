@@ -1,6 +1,5 @@
 from threading import Thread
 from queue import Queue, Empty
-from collections.abc import Generator
 from flask import jsonify, request, stream_with_context, Response
 from langchain.chat_models import ChatOpenAI
 from langchain.callbacks.base import BaseCallbackHandler
