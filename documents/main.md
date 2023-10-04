@@ -105,6 +105,15 @@ Pacifist: Units with this keyword can't attack. They might have other useful abi
 Salvage X: When a Unit with this keyword is destroyed, you can move up to X of its attached Upgrades to other Units. This helps you maintain an advantage even when you lose a Unit.
 Shielded: Units with this keyword are immune to the next enemy card effect that targets them. This can protect them from powerful removal spells or debilitating effects.
 
+## Card Editions in Parallel
+
+-   Parallel cards come in five distinct forms:
+-   Apparitions (AP): These are non-NFT cards identical in functionality to their NFT versions. However, they cannot be traded and do not contribute towards earning $PRIME or Renown.
+-   First Edition (FE): These are NFTs available in packs during Parallel sales events.
+-   Special Edition (SE): These NFTs are also found in packs during Parallel sales but are rarer than First Edition cards.
+-   Perfect Loop (PL): These NFTs are available in packs during Parallel sales, are even scarcer than Special Edition cards, and come with a unique animation.
+-   Echoes: Players with sufficient Renown can mint these NFTs. They function similarly to other NFTs, but the amount of Renown they generate differs. Additionally, Echoes cannot mint other Echoes.
+
 ## Link utili
 
 -   [@ParallelStudios](https://parallel.life): Official site

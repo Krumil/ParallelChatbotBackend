@@ -42,20 +42,20 @@ for document in pdfs:
 pdf_vectorstore = Chroma.from_documents(documents=splits, embedding=OpenAIEmbeddings(), persist_directory=os.path.join(base_directory, "pdf_chroma_db"))
 pdf_vectorstore.persist()
 
-# data_csv = []
-# for document in csvs:
-# 	csv_loader = CSVLoader(file_path=document, encoding="utf-8")
-# 	data = csv_loader.load_and_split()
-# 	data_csv.extend(data)
+data_csv = []
+for document in csvs:
+	csv_loader = CSVLoader(file_path=document, encoding="utf-8")
+	data = csv_loader.load_and_split()
+	data_csv.extend(data)
 
-# csv_vectorstore = Chroma.from_documents(documents=data_csv, embedding=OpenAIEmbeddings(), persist_directory=os.path.join(base_directory, "csv_chroma_db"))
-# csv_vectorstore.persist()
+csv_vectorstore = Chroma.from_documents(documents=data_csv, embedding=OpenAIEmbeddings(), persist_directory=os.path.join(base_directory, "csv_chroma_db"))
+csv_vectorstore.persist()
 
-# data_gitbook = []
-# for document in gitbooks:
-# 	gitbook_loader = GitbookLoader(document, load_all_paths=True)
-# 	data = gitbook_loader.load_and_split()
-# 	data_gitbook.extend(data)
+data_gitbook = []
+for document in gitbooks:
+	gitbook_loader = GitbookLoader(document, load_all_paths=True)
+	data = gitbook_loader.load_and_split()
+	data_gitbook.extend(data)
 
-# gitbook_vectorstore = Chroma.from_documents(documents=data_gitbook, embedding=OpenAIEmbeddings(), persist_directory=os.path.join(base_directory, "gitbook_chroma_db"))
-# gitbook_vectorstore.persist()
+gitbook_vectorstore = Chroma.from_documents(documents=data_gitbook, embedding=OpenAIEmbeddings(), persist_directory=os.path.join(base_directory, "gitbook_chroma_db"))
+gitbook_vectorstore.persist()
