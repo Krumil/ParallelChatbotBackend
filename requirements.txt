@@ -8,3 +8,4 @@ chromadb==0.3.29
 pandas==1.5.3
 tiktoken==0.5.1
 beautifulsoup4==4.12.2
+Werkzeug==2.2.2
