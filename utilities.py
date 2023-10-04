@@ -37,6 +37,10 @@ csv_retriever = csv_vectorstore.as_retriever()
 gitbook_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "gitbook_chroma_db"), embedding_function=OpenAIEmbeddings())
 gitbook_retriever = gitbook_vectorstore.as_retriever()
 
+print(os.path.join(base_directory, "gitbook_chroma_db"))
+print(os.path.join(base_directory, "csv_chroma_db"))
+print(os.path.join(base_directory, "pdf_chroma_db"))
+
 main_tool = create_retriever_tool(
 	pdf_retriever, 
 	"parallel_tcg",
