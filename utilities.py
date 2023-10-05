@@ -27,12 +27,20 @@ else:
 
 print(os.getcwd())
 
+
+def check_read_access(path):
+    if os.access(path, os.R_OK):
+        print(f"The script has read access to {path}")
+    else:
+        print(f"The script does NOT have read access to {path}")
+
+
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
 def initialize_tools():
-	print(os.path.join(base_directory, "gitbook_chroma_db"))
-	print(os.path.join(base_directory, "csv_chroma_db"))
-	print(os.path.join(base_directory, "pdf_chroma_db"))
+	print(check_read_access((os.path.join(base_directory, "gitbook_chroma_db"))))
+	print(check_read_access((os.path.join(base_directory, "csv_chroma_db"))))
+	print(check_read_access((os.path.join(base_directory, "pdf_chroma_db"))))
 	pdf_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "pdf_chroma_db"), embedding_function=OpenAIEmbeddings())
 	pdf_retriever = pdf_vectorstore.as_retriever()
 
