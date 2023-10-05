@@ -20,7 +20,7 @@ os.getenv("LANGCHAIN_PROJECT")
 DEPLOYMENT_ENV = os.environ.get('DEPLOYMENT_ENV', 'DEVELOPMENT')
 
 if DEPLOYMENT_ENV == 'PRODUCTION':
-	base_directory = "./embeddings"
+	base_directory = "./embeddings/"
 	# base_directory = "/var/data/embeddings/"
 else:
 	base_directory = ".\\embeddings\\"
@@ -31,6 +31,9 @@ openai_api_key = os.environ["OPENAI_API_KEY"]
 
 def initialize_tools():
 	print("Initializing tools")
+	print(os.path.join(base_directory, "gitbook_chroma_db"))
+	print(os.path.join(base_directory, "csv_chroma_db"))
+	print(os.path.join(base_directory, "pdf_chroma_db"))
 	pdf_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "pdf_chroma_db"), embedding_function=OpenAIEmbeddings())
 	pdf_retriever = pdf_vectorstore.as_retriever()
 
