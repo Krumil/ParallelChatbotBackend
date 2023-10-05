@@ -30,6 +30,7 @@ print(os.getcwd())
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
 def initialize_tools():
+	print("Initializing tools")
 	pdf_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "pdf_chroma_db"), embedding_function=OpenAIEmbeddings())
 	pdf_retriever = pdf_vectorstore.as_retriever()
 
@@ -56,6 +57,8 @@ def initialize_tools():
 	)
 	
 	tools = [main_tool, csv_tool, gitbook_tool]
+
+	print("Tools initialized")
 	
 	return tools
 
