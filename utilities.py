@@ -19,12 +19,13 @@ os.getenv("LANGCHAIN_PROJECT")
 
 DEPLOYMENT_ENV = os.environ.get('DEPLOYMENT_ENV', 'DEVELOPMENT')
 
-# if DEPLOYMENT_ENV == 'PRODUCTION':
-# 	base_directory = "/var/data/embeddings/"
-# else:
-base_directory = ".\\embeddings\\"
+if DEPLOYMENT_ENV == 'PRODUCTION':
+	base_directory = "./embeddings"
+	# base_directory = "/var/data/embeddings/"
+else:
+	base_directory = ".\\embeddings\\"
 
-print(base_directory)
+print(os.getcwd())
 
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
