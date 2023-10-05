@@ -5,6 +5,12 @@ from langchain.vectorstores import Chroma
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.document_loaders import GitbookLoader
 
+# these lines swap the stdlib sqlite3 lib with the pysqlite3 package
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+
 DEPLOYMENT_ENV = os.environ.get('DEPLOYMENT_ENV', 'DEVELOPMENT')
 
 if DEPLOYMENT_ENV == 'PRODUCTION':

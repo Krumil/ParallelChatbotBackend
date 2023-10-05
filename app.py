@@ -3,6 +3,12 @@ from flask_cors import CORS
 from endpoints import query_bot_endpoint
 from utilities import initialize_tools  
 
+# these lines swap the stdlib sqlite3 lib with the pysqlite3 package
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+
 app = Flask(__name__)
 CORS(app)
 
