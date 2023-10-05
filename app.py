@@ -6,7 +6,7 @@ from utilities import initialize_tools
 app = Flask(__name__)
 CORS(app)
 
-app.tools = initialize_tools()
+initialize_tools()
 
 app.add_url_rule('/query_bot', 'query_bot', query_bot_endpoint, methods=['GET'])
 
