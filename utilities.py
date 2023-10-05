@@ -30,7 +30,6 @@ print(os.getcwd())
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
 def initialize_tools():
-	print("Initializing tools")
 	print(os.path.join(base_directory, "gitbook_chroma_db"))
 	print(os.path.join(base_directory, "csv_chroma_db"))
 	print(os.path.join(base_directory, "pdf_chroma_db"))
@@ -42,6 +41,15 @@ def initialize_tools():
 
 	gitbook_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "gitbook_chroma_db"), embedding_function=OpenAIEmbeddings())
 	gitbook_retriever = gitbook_vectorstore.as_retriever()
+
+	pdf_documents = pdf_vectorstore.get()['documents']
+	csv_documents = csv_vectorstore.get()['documents']
+	gitbook_documents = gitbook_vectorstore.get()['documents']
+
+	# print all first documents
+	print(pdf_documents[0])
+	print(csv_documents[0])
+	print(gitbook_documents[0])
 
 	main_tool = create_retriever_tool(
 		pdf_retriever, 
@@ -61,8 +69,6 @@ def initialize_tools():
 	
 	tools = [main_tool, csv_tool, gitbook_tool]
 
-	print("Tools initialized")
-	
 	return tools
 
 # pdf_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "pdf_chroma_db"), embedding_function=OpenAIEmbeddings())
@@ -102,6 +108,7 @@ def initialize_bot(llm):
 	memory_key = "history"
 	memory = AgentTokenBufferMemory(memory_key=memory_key, llm=llm, max_history=2, max_token_limit= 3000)
 	tools = app.tools
+	print(tools)
 
 	# Prompt Template
 	system_message = SystemMessage(
