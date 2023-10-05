@@ -48,6 +48,15 @@ def initialize_tools():
 	gitbook_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "gitbook_chroma_db"), embedding_function=OpenAIEmbeddings())
 	gitbook_retriever = gitbook_vectorstore.as_retriever()
 
+	pdf_documents = pdf_vectorstore.get()['documents']
+	csv_documents = csv_vectorstore.get()['documents']
+	gitbook_documents = gitbook_vectorstore.get()['documents']
+
+	# print all first documents
+	print(pdf_documents[0])
+	print(csv_documents[0])
+	print(gitbook_documents[0])
+
 	print(os.path.join(base_directory, "gitbook_chroma_db"))
 	print(os.path.join(base_directory, "csv_chroma_db"))
 	print(os.path.join(base_directory, "pdf_chroma_db"))
