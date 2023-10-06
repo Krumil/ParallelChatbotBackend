@@ -7,6 +7,8 @@ from langchain.agents.openai_functions_agent.base import OpenAIFunctionsAgent
 from langchain.schema.messages import SystemMessage
 from langchain.prompts import MessagesPlaceholder
 from langchain.agents import AgentExecutor
+from langchain.retrievers.tavily_search_api import TavilySearchAPIRetriever
+
 import os
 
 load_dotenv()
@@ -15,6 +17,9 @@ os.getenv("LANGCHAIN_TRACING_V2")
 os.getenv("LANGCHAIN_ENDPOINT")
 os.getenv("LANGCHAIN_API_KEY") 
 os.getenv("LANGCHAIN_PROJECT")  
+
+os.getenv("TAVILY_API_KEY")
+
 
 DEPLOYMENT_ENV = os.environ.get('DEPLOYMENT_ENV', 'DEVELOPMENT')
 
@@ -48,18 +53,7 @@ def initialize_tools():
 	gitbook_vectorstore = Chroma(persist_directory=os.path.join(base_directory, "gitbook_chroma_db"), embedding_function=OpenAIEmbeddings())
 	gitbook_retriever = gitbook_vectorstore.as_retriever()
 
-	pdf_documents = pdf_vectorstore.get()['documents']
-	csv_documents = csv_vectorstore.get()['documents']
-	gitbook_documents = gitbook_vectorstore.get()['documents']
-
-	# print all first documents
-	print(pdf_documents[0])
-	print(csv_documents[0])
-	print(gitbook_documents[0])
-
-	print(os.path.join(base_directory, "gitbook_chroma_db"))
-	print(os.path.join(base_directory, "csv_chroma_db"))
-	print(os.path.join(base_directory, "pdf_chroma_db"))
+	web_retriever = TavilySearchAPIRetriever(k=4)
 
 	main_tool = create_retriever_tool(
 		pdf_retriever, 
@@ -76,7 +70,12 @@ def initialize_tools():
 		"echelon_docs",
 		"Useful for answering questions about PRIME, Echelon, and the anything related to the economics of the Parallel ecosystem"
 	)
-	tools = [main_tool, csv_tool, gitbook_tool]
+	web_tool = create_retriever_tool(
+		web_retriever,
+		"web",
+		"Search the web about information related to Parallel TCG"
+	)
+	tools = [main_tool, csv_tool, gitbook_tool, web_tool]
 
 
 

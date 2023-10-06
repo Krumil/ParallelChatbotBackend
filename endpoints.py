@@ -46,6 +46,7 @@ def stream(agent, user_input, user_queue):
 		try:
 			next_token = user_queue.get(True, timeout=2)  # Added timeout here
 			if next_token == '[DONE]':  # Check for end signal
+				yield f"data: {json.dumps(next_token)}\n\n"
 				break
 			if next_token:
 				yield f"data: {json.dumps(next_token)}\n\n"
